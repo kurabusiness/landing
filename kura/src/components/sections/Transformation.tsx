@@ -2,15 +2,14 @@
 
 import { ScrollSection } from "@/components/layout/ScrollSection";
 import { Container } from "@/components/layout/Container";
+import { scrollToSection } from "@/lib/scroll";
 import { transformation } from "@/lib/content";
 
 export function Transformation() {
-  const scrollToCta = () => {
-    document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollToCta = () => scrollToSection("cta");
 
   return (
-    <ScrollSection id="diferencial" className="justify-center overflow-y-auto bg-bg py-12 md:py-16">
+    <ScrollSection id="diferencial" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <Container size="grid">
         <div className="mb-5 md:mb-6">
           <h2
@@ -48,7 +47,7 @@ export function Transformation() {
         {/* Desktop */}
         <div className="hidden md:block">
           <div className="grid grid-cols-2 gap-6 md:gap-8 lg:gap-10">
-            <div>
+            <div className="min-w-0">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                 Antes
               </h3>
@@ -60,8 +59,7 @@ export function Transformation() {
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute -left-4 md:-left-6 top-0 bottom-0 w-px bg-border" />
+            <div className="min-w-0 border-l border-border pl-6 md:pl-8 lg:pl-10">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-accent/60">
                 Depois
               </h3>
@@ -79,7 +77,7 @@ export function Transformation() {
         <button
           type="button"
           onClick={scrollToCta}
-          className="mt-8 inline-flex h-11 items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98]"
+          className="mt-8 inline-flex h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation md:mt-10"
         >
           Dê o primeiro passo
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

@@ -12,7 +12,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-border">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between py-4 text-left transition-colors hover:text-accent"
+        className="flex w-full min-h-[48px] items-center justify-between py-4 pr-2 text-left transition-colors hover:text-accent touch-manipulation"
         aria-expanded={open}
       >
         <span className="pr-4 font-heading font-semibold text-fg" style={{ fontSize: "var(--text-body)" }}>
@@ -51,7 +51,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export function FAQ() {
   return (
-    <ScrollSection id="faq" className="justify-center overflow-y-auto bg-bg py-12 md:py-16">
+    <ScrollSection id="faq" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <Container size="text">
         <h2
           className="mb-5 font-heading font-bold tracking-[-0.025em] text-fg md:mb-6"

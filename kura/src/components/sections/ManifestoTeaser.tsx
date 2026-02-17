@@ -2,59 +2,53 @@
 
 import { ScrollSection } from "@/components/layout/ScrollSection";
 import { Container } from "@/components/layout/Container";
+import { ScrollHint } from "@/components/ui/ScrollHint";
 import { manifesto } from "@/lib/content";
 
 const teaserSections = manifesto.sections.slice(0, 4);
 
 export function ManifestoTeaser() {
   return (
-    <ScrollSection id="manifesto" className="justify-center overflow-y-auto bg-bg py-12 md:py-16">
-      <Container size="text" className="flex flex-1 flex-col max-w-2xl">
-        <div className="mb-6 md:mb-8">
-          <span className="font-mono text-[11px] font-medium uppercase tracking-[0.04em] text-muted">
+    <ScrollSection
+      id="manifesto"
+      className="flex h-dvh min-h-0 flex-col overflow-hidden bg-bg pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]"
+    >
+      <Container size="grid" className="flex min-h-0 flex-1 flex-col gap-3 py-4 md:gap-4 md:py-6">
+        <div className="shrink-0">
+          <span className="font-mono text-[10px] font-medium uppercase tracking-[0.04em] text-muted">
             {manifesto.label}
           </span>
           <h2
-            className="mt-2 font-heading font-bold leading-[1.15] tracking-[-0.02em] text-fg"
-            style={{ fontSize: "var(--text-title)" }}
+            className="mt-1.5 font-heading font-bold leading-[1.15] tracking-[-0.03em] text-fg"
+            style={{ fontSize: "var(--text-display)" }}
           >
             {manifesto.opening}
           </h2>
-          <p className="mt-4 max-w-xl leading-[1.65] text-muted" style={{ fontSize: "var(--text-body)" }}>
+          <p className="mt-3 text-[0.9375rem] leading-normal text-muted">
             {manifesto.openingBody}
           </p>
         </div>
 
-        <div className="space-y-6 md:space-y-8">
-          {teaserSections.map((section, i) => (
-            <div
-              key={i}
-              className="group relative pl-5 md:pl-6 border-l-2 border-border/80 transition-colors hover:border-accent/40"
-            >
-              <span className="absolute -left-[9px] top-0.5 h-1.5 w-1.5 rounded-full bg-border group-hover:bg-accent/60 transition-colors" aria-hidden />
-              <h3
-                className="mb-1.5 font-heading font-bold leading-[1.2] tracking-[-0.015em] text-fg"
-                style={{ fontSize: "var(--text-body)" }}
-              >
-                {section.declaration}
-              </h3>
-              <p className="max-w-xl leading-[1.6] text-muted text-sm">
-                {section.body}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <button
-          type="button"
-          onClick={() => document.getElementById("pillars")?.scrollIntoView({ behavior: "smooth" })}
-          className="mt-8 inline-flex h-11 items-center gap-2 border border-border/80 px-6 text-sm font-semibold text-fg transition-all duration-200 hover:border-border-hover hover:text-fg"
+        <div
+          className="min-h-0 flex-1 overflow-y-auto overscroll-y-auto pb-6"
+          style={{ WebkitOverflowScrolling: "touch", paddingBottom: "max(1.5rem, env(safe-area-inset-bottom, 0px))" }}
         >
-          Continue
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 5v14M19 12l-7 7-7-7" />
-          </svg>
-        </button>
+          <div className="grid gap-4 md:grid-cols-2 md:gap-x-10 md:gap-y-6">
+            {teaserSections.map((section, i) => (
+              <div key={i} className="border-l-2 border-border/60 pl-5 md:pl-6">
+                <h3 className="mb-1.5 font-heading font-bold text-[0.9375rem] leading-tight tracking-[-0.02em] text-fg">
+                  {section.declaration}
+                </h3>
+                <p className="text-[0.9375rem] leading-normal text-muted">
+                  {section.body}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex w-full justify-center md:mt-10">
+            <ScrollHint />
+          </div>
+        </div>
       </Container>
     </ScrollSection>
   );

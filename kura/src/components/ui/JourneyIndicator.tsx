@@ -1,8 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-const SECTIONS = ["hero", "problem", "manifesto", "pillars", "diferencial", "cta", "faq"] as const;
+import { useActiveSection, SECTIONS } from "@/hooks/useActiveSection";
 
 const SECTION_LABELS: Record<(typeof SECTIONS)[number], string> = {
   hero: "Início",
@@ -15,33 +13,11 @@ const SECTION_LABELS: Record<(typeof SECTIONS)[number], string> = {
 };
 
 export function JourneyIndicator() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const main = document.querySelector(".scroll-snap-container");
-    if (!main) return;
-
-    const sections = SECTIONS.map((id) => document.getElementById(id)).filter(Boolean);
-    if (sections.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          const id = entry.target.id;
-          const idx = SECTIONS.indexOf(id as (typeof SECTIONS)[number]);
-          if (idx >= 0) setActiveIndex(idx);
-        }
-      },
-      { root: main, rootMargin: "-25% 0px -25% 0px", threshold: 0 }
-    );
-
-    sections.forEach((el) => el && observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
+  const activeSection = useActiveSection();
+  const activeIndex = SECTIONS.indexOf(activeSection);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   };
 
   return (

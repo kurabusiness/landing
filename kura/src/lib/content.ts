@@ -6,7 +6,9 @@ export const SITE = {
   email: process.env.NEXT_PUBLIC_EMAIL ?? "",
   instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
   instagramHandle: process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? "@kura",
-  instagramHint: "Conteúdo diário no Instagram. Siga para não perder nada.",
+  instagramHint: "Conteúdo diário. Siga no Instagram.",
+  youtube: process.env.NEXT_PUBLIC_YOUTUBE_URL ?? "",
+  youtubeHandle: process.env.NEXT_PUBLIC_YOUTUBE_HANDLE ?? "YouTube",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "",
 } as const;
 
@@ -26,9 +28,9 @@ export const MANIFESTO_VIDEO_ID: string | null = null;
 
 // ─── Hero ───────────────────────────────────────────────────
 export const hero = {
-  headline: "Doc, você não precisa de mais plantão, nem achar um serviço melhor.",
-  sub: "Precisa criar seu negócio.",
-  detail: "É assim que você conquista o controle da sua vida e pratica medicina nos seus próprios termos. A Kura te mostra como.",
+  headline: "Doc, você não precisa de mais um plantão, nem de achar um serviço melhor.",
+  sub: "Você precisa criar o seu negócio.",
+  detail: "Conquiste o controle da sua vida, pratique medicina nos seus próprios termos e tenha um negócio lucrativo.",
   cta: "Começar a jornada",
 };
 
@@ -81,7 +83,7 @@ export const manifesto = {
 // ─── Pillars ────────────────────────────────────────────────
 export const pillars = {
   label: "Os Pilares",
-  title: "O que a Kura ensina.",
+  title: "O que a Kura acredita.",
   items: [
     {
       number: "01",
@@ -161,7 +163,7 @@ export const faq = [
   {
     question: "Isso é gratuito mesmo?",
     answer:
-      "Sim. O conteúdo por email é gratuito. A Kura está construindo uma base de médicos que querem construir seu negócio. Quem entra agora participa do início.",
+      "Sim. O conteúdo por email é gratuito. A Kura está construindo um movimento de médicos que querem construir seu negócio. Quem entra agora participa do início.",
   },
   {
     question: "Isso é curso de guru?",
@@ -176,7 +178,7 @@ export const faq = [
   {
     question: "O que eu vou receber?",
     answer:
-      "Conteúdo por email. Curadoria de ferramentas, guias práticos e o caminho pra construir seu negócio. Posicionamento, presença digital, finanças. Sem compromisso de frequência.",
+      "Conteúdo por email. Quem entra agora participa do início. O que vier, você recebe primeiro. Sem compromisso de frequência.",
   },
   {
     question: "Preciso de produto digital pra começar?",
@@ -202,19 +204,14 @@ export const faq = [
 
 // ─── CTA Final ──────────────────────────────────────────────
 export const ctaFinal = {
-  headline: "Faça parte da primeira turma.",
-  subheadline: "Conteúdos exclusivos por email, guias práticos e acesso antecipado ao que vem por aí. Quem entra agora participa do início, com benefícios de embaixador.",
-  buttonText: "Quero fazer parte",
+  headline: "Cadastre seu e-mail.",
+  subheadline: "Quem entra agora fica na frente.",
+  buttonText: "Participar",
   buttonTextLoading: "Entrando...",
   placeholder: "Seu e-mail",
   disclaimer: "Gratuito. Sem spam.",
-  benefitsTitle: "O que você recebe:",
-  benefits: [
-    "Conteúdos exclusivos por email",
-    "Guias práticos: precificação, consultório, automações",
-    "Kit de ferramentas para médicos empreendedores",
-    "Acesso antecipado, com benefícios de primeira turma",
-  ],
+  benefitsTitle: "",
+  benefits: [],
 };
 
 // ─── O que você recebe (legado, usado em Manifesto) ─────────

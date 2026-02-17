@@ -2,6 +2,7 @@
 
 import { Container } from "@/components/layout/Container";
 import { TextReveal } from "@/components/ui/TextReveal";
+import { scrollToSection } from "@/lib/scroll";
 import { hero } from "@/lib/content";
 
 export function Hero() {
@@ -36,8 +37,8 @@ export function Hero() {
         <div className="mt-8">
           <button
             type="button"
-            onClick={() => document.getElementById("problem")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex h-11 items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98]"
+            onClick={() => scrollToSection("problem")}
+            className="inline-flex h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation"
           >
             {hero.cta}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

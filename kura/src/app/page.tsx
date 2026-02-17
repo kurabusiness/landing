@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <JourneyIndicator />
-      <main className="scroll-snap-container pb-20 md:pb-24">
+      <main className="scroll-snap-container pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
         <Hero />
         <Problem />
         <ManifestoTeaser />

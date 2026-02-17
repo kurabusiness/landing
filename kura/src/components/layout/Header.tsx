@@ -3,13 +3,18 @@
 import { useState } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { SITE, navLinks } from "@/lib/content";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const activeSection = useActiveSection();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-14 md:h-16 bg-bg/95 backdrop-blur-md border-b border-border/40">
-      <div className="mx-auto flex h-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-5 md:px-8 lg:px-12">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-md border-b border-border/40"
+      style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
+    >
+      <div className="mx-auto flex h-14 md:h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-5 md:px-8 lg:px-12 min-w-0">
         <Logo />
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -18,14 +23,14 @@ export function Header() {
               key={link.href}
               href={link.href}
               onClick={(e) => {
-                const el = document.querySelector(link.href);
-                if (el) {
+                const id = link.href.replace("#", "");
+                if (id) {
                   e.preventDefault();
-                  el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
                 }
               }}
               className={`font-mono text-xs tracking-[0.04em] transition-colors hover:text-accent ${
-                link.label === "Faça parte" ? "font-semibold text-fg" : "text-tertiary"
+                link.href.replace("#", "") === activeSection ? "font-semibold text-fg" : "text-tertiary"
               }`}
             >
               {link.label}
@@ -38,7 +43,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex h-9 w-9 items-center justify-center md:hidden"
+            className="flex h-11 min-w-[44px] items-center justify-center md:hidden touch-manipulation"
             aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={mobileOpen}
           >
@@ -69,7 +74,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="flex h-9 w-9 items-center justify-center text-tertiary transition-colors hover:text-accent"
               aria-label="Siga no Instagram"
-              title="Siga no Instagram — conteúdo diário"
+              title="Siga no Instagram"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -83,7 +88,7 @@ export function Header() {
 
       {/* Mobile nav dropdown */}
       {mobileOpen && (
-        <div className="absolute left-0 right-0 top-14 bottom-0 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto max-h-[calc(100dvh-3.5rem)]">
+        <div className="absolute left-0 right-0 top-14 md:top-16 bottom-0 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto max-h-[calc(100dvh-3.5rem)]">
           <nav className="flex flex-col py-2">
             {navLinks.map((link) => (
               <a
@@ -91,17 +96,14 @@ export function Header() {
                 href={link.href}
                 onClick={(e) => {
                   setMobileOpen(false);
-                  const el = document.querySelector(link.href);
-                  if (el) {
+                  const id = link.href.replace("#", "");
+                  if (id) {
                     e.preventDefault();
-                    const main = document.querySelector(".scroll-snap-container");
-                    if (main) {
-                      el.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }
+                    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
                   }
                 }}
                 className={`px-4 py-3.5 font-mono text-sm transition-colors active:bg-surface-2 active:text-accent ${
-                  link.label === "Faça parte" ? "font-semibold text-fg" : "text-tertiary"
+                  link.href.replace("#", "") === activeSection ? "font-semibold text-fg" : "text-tertiary"
                 }`}
               >
                 {link.label}
