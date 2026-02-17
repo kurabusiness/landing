@@ -20,8 +20,8 @@ export function Transformation() {
           </h2>
         </div>
 
-        {/* Mobile / narrow */}
-        <div className="block space-y-3 sm:hidden">
+        {/* Stacked: mobile e viewports estreitos (ex: monitor vertical) */}
+        <div className="block space-y-3 @6xl:hidden">
           {transformation.rows.map((row, i) => (
             <div key={i} className="border border-border bg-bg p-4 sm:p-5">
               <div className="mb-3">
@@ -44,9 +44,9 @@ export function Transformation() {
           ))}
         </div>
 
-        {/* Desktop / tablet portrait+ */}
-        <div className="hidden sm:block">
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+        {/* Colunas lado a lado: apenas em containers largos */}
+        <div className="hidden @6xl:block">
+          <div className="grid grid-cols-2 gap-6 @6xl:gap-10">
             <div className="min-w-0">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                 Antes
@@ -59,7 +59,7 @@ export function Transformation() {
                 ))}
               </div>
             </div>
-            <div className="min-w-0 border-l border-border pl-6 md:pl-8 lg:pl-10">
+            <div className="min-w-0 border-l border-border pl-6 @6xl:pl-10">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-accent/60">
                 Depois
               </h3>

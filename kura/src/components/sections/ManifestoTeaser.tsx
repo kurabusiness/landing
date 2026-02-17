@@ -10,7 +10,7 @@ const teaserSections = manifesto.sections.slice(0, 4);
 export function ManifestoTeaser() {
   return (
     <ScrollSection id="manifesto" className="flex min-h-dvh flex-col bg-bg py-5 sm:py-6 md:py-8">
-      <Container size="grid" className="flex flex-col gap-3 md:gap-4">
+      <Container size="wide" className="flex flex-col gap-3 md:gap-4">
         <div>
           <span className="font-mono text-[10px] font-medium uppercase tracking-[0.04em] text-muted">
             {manifesto.label}
@@ -27,9 +27,9 @@ export function ManifestoTeaser() {
         </div>
 
         <div className="pb-6">
-          <div className="grid gap-5 sm:gap-6 md:grid-cols-2 md:gap-x-10 md:gap-y-6">
+          <div className="grid gap-5 sm:gap-6 @6xl:grid-cols-2 @6xl:gap-x-10 @6xl:gap-y-6">
             {teaserSections.map((section, i) => (
-              <div key={i} className="border-l-2 border-border/60 pl-4 sm:pl-5 md:pl-6">
+              <div key={i} className="border-l-2 border-border/60 pl-4 sm:pl-5 @6xl:pl-6">
                 <h3 className="mb-1.5 font-heading font-bold text-[0.9375rem] leading-tight tracking-[-0.02em] text-fg">
                   {section.declaration}
                 </h3>

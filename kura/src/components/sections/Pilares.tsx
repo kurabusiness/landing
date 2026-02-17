@@ -17,7 +17,7 @@ export function Pilares() {
           <h2 className="mb-4 font-heading font-bold tracking-[-0.025em] text-fg sm:mb-6" style={{ fontSize: "var(--text-display)" }}>
             {pillars.title}
           </h2>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-5">
+          <div className="grid grid-cols-1 gap-3 @md:grid-cols-2 @md:gap-4 @6xl:grid-cols-3 @6xl:gap-5">
             {pillars.items.map((pillar) => (
               <div
                 key={pillar.number}

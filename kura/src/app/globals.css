@@ -61,6 +61,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* ─── Container Queries ──────────────────────────────────────── */
+/* @container no Container: layout responde ao tamanho do container, não ao viewport */
+/* Assim, monitor vertical (narrow) = 1 coluna; desktop wide = 2–3 colunas */
+
 /* ─── Base ──────────────────────────────────────────────────── */
 
 html {
