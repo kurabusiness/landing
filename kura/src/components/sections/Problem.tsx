@@ -14,10 +14,10 @@ export function Problem() {
             A realidade
           </span>
           <h2
-            className="mt-1 font-heading font-medium tracking-[-0.025em] text-fg"
+            className="mt-1 font-heading font-medium tracking-[-0.025em]"
             style={{ fontSize: "var(--text-title)" }}
           >
-            A vida que você imaginou ficou pra depois?
+            <span className="headline-highlight">A vida que você imaginou ficou pra depois?</span>
           </h2>
         </div>
 

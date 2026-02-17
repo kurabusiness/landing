@@ -13,10 +13,10 @@ export function Transformation() {
       <Container size="grid">
         <div className="mb-4 sm:mb-5 md:mb-6">
           <h2
-            className="font-heading font-bold tracking-[-0.025em] text-fg"
+            className="font-heading font-bold tracking-[-0.025em]"
             style={{ fontSize: "var(--text-display)" }}
           >
-            {transformation.title}
+            <span className="headline-highlight">{transformation.title}</span>
           </h2>
         </div>
 
@@ -77,7 +77,7 @@ export function Transformation() {
         <button
           type="button"
           onClick={scrollToCta}
-          className="mt-6 inline-flex h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation sm:mt-8 md:mt-10"
+          className="mt-6 hidden h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation sm:mt-8 sm:inline-flex md:mt-10"
         >
           Dê o primeiro passo
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

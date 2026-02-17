@@ -27,10 +27,10 @@ export function Hero() {
         />
 
         <p
-          className="mt-3 font-heading font-bold tracking-[-0.025em] text-fg"
+          className="mt-3 font-heading font-bold tracking-[-0.025em]"
           style={{ fontSize: "var(--text-display)" }}
         >
-          {hero.sub}
+          <span className="headline-highlight">{hero.sub}</span>
         </p>
 
         <p className="mt-4 sm:mt-5 max-w-lg leading-[1.6] text-muted" style={{ fontSize: "var(--text-lead)" }}>

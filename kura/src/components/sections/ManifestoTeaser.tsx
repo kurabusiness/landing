@@ -16,10 +16,10 @@ export function ManifestoTeaser() {
             {manifesto.label}
           </span>
           <h2
-            className="mt-1.5 font-heading font-bold leading-[1.15] tracking-[-0.03em] text-fg"
+            className="mt-1.5 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
             style={{ fontSize: "var(--text-display)" }}
           >
-            {manifesto.opening}
+            <span className="headline-highlight">{manifesto.opening}</span>
           </h2>
           <p className="mt-3 text-[0.9375rem] leading-normal text-muted">
             {manifesto.openingBody}
@@ -29,7 +29,7 @@ export function ManifestoTeaser() {
         <div className="pb-6">
           <div className="grid gap-5 sm:gap-6 @6xl:grid-cols-2 @6xl:gap-x-10 @6xl:gap-y-6">
             {teaserSections.map((section, i) => (
-              <div key={i} className="border-l-2 border-border/60 pl-4 sm:pl-5 @6xl:pl-6">
+              <div key={i} className="border-l-2 border-border-strong pl-4 sm:pl-5 @6xl:pl-6">
                 <h3 className="mb-1.5 font-heading font-bold text-[0.9375rem] leading-tight tracking-[-0.02em] text-fg">
                   {section.declaration}
                 </h3>

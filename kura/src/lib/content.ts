@@ -85,7 +85,7 @@ export const manifesto = {
       body: "Consultório, clínica, teleconsulta, produto digital. O formato é seu. O princípio não muda: estrutura enxuta, você no comando, sistemas fazendo o trabalho pesado. A internet deu pra um médico sozinho o alcance que antes exigia equipe, ponto caro e sócio. Dá pra começar pequeno. Crescer no seu ritmo. Fazer do seu jeito.",
     },
     {
-      declaration: "É nisso que a Kura acredita.",
+      declaration: "É nisso que acreditamos.",
       body: "O médico brasileiro merece clareza de caminho. Construir negócio não é abandonar a medicina. É praticá-la de verdade, nos seus termos. As ferramentas existem. Falta alguém mostrar como juntar as peças.",
     },
   ],
@@ -93,8 +93,8 @@ export const manifesto = {
 
 // ─── Pillars ────────────────────────────────────────────────
 export const pillars = {
-  label: "Os Pilares",
-  title: "O que a Kura acredita.",
+  label: "O que acreditamos",
+  title: "O\u00A0que acreditamos.",
   items: [
     {
       number: "01",

@@ -54,10 +54,10 @@ export function FAQ() {
     <ScrollSection id="faq" className="bg-bg pt-6 pb-8 sm:pt-8 sm:pb-10 md:pt-12 md:pb-12">
       <Container size="text">
         <h2
-          className="mb-4 font-heading font-bold tracking-[-0.025em] text-fg sm:mb-5 md:mb-6"
+          className="mb-4 font-heading font-bold tracking-[-0.025em] sm:mb-5 md:mb-6"
           style={{ fontSize: "var(--text-display)" }}
         >
-          Perguntas frequentes
+          <span className="headline-highlight">Perguntas frequentes</span>
         </h2>
 
         <div>

@@ -54,10 +54,12 @@ export function EmailGate() {
             </span>
           )}
           <h2
-            className={`font-heading font-bold leading-[1.15] tracking-[-0.03em] text-fg ${showSuccess ? "mt-4" : ""} mb-4`}
+            className={`font-heading font-bold leading-[1.15] tracking-[-0.03em] ${showSuccess ? "mt-4" : ""} mb-4`}
             style={{ fontSize: "var(--text-display)" }}
           >
-            {showSuccess ? "Você está dentro." : ctaFinal.headline}
+            <span className="headline-highlight">
+              {showSuccess ? "Você está dentro." : ctaFinal.headline}
+            </span>
           </h2>
           <p className="mx-auto mt-4 max-w-md leading-[1.6] text-muted" style={{ fontSize: "var(--text-body)" }}>
             {showSuccess
@@ -144,7 +146,7 @@ export function EmailGate() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="h-12 min-h-[48px] shrink-0 bg-accent px-8 font-heading text-sm font-semibold text-accent-fg transition-all duration-200 hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 touch-manipulation"
+                    className="h-12 min-h-[48px] w-full shrink-0 bg-accent px-8 font-heading text-sm font-semibold text-accent-fg transition-all duration-200 hover:bg-accent-hover active:scale-[0.99] disabled:opacity-60 touch-manipulation sm:w-auto"
                   >
                     {status === "loading" ? "Enviando..." : ctaFinal.buttonText}
                   </button>
@@ -171,7 +173,7 @@ export function EmailGate() {
               const el = document.getElementById("faq");
               el?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
-            className="font-mono text-[11px] text-tertiary transition-colors hover:text-fg py-3 -my-3 min-h-[44px] flex items-center justify-center touch-manipulation"
+            className="font-mono text-[11px] text-tertiary transition-colors hover:text-fg py-3 min-h-[44px] flex items-center justify-center touch-manipulation"
           >
             Dúvidas? Ver FAQ
           </button>

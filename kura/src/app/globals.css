@@ -47,6 +47,7 @@
   --color-tertiary: var(--fg-tertiary);
   --color-border: var(--border);
   --color-border-hover: var(--border-hover);
+  --color-border-strong: var(--border-strong);
   --color-card: var(--surface-1);
   --color-surface-1: var(--surface-1);
   --color-surface-2: var(--surface-2);
@@ -110,6 +111,16 @@ p, li {
     hyphens: auto;
     -webkit-hyphens: auto;
   }
+}
+
+/* ─── Section headline highlight (padrão de destaque) ───────── */
+/* Fundo branco como seleção de texto, aplicado aos títulos principais */
+.headline-highlight {
+  background-color: var(--accent);
+  color: var(--accent-fg);
+  padding: 0.125em 0.25em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* ─── Selection ─────────────────────────────────────────────── */

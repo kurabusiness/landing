@@ -33,7 +33,7 @@ export function Footer() {
               <button
                 type="button"
                 onClick={handleBackToTop}
-                className="font-mono text-[11px] text-tertiary transition-colors hover:text-fg py-2 -my-2 touch-manipulation min-h-[44px] flex items-center justify-center"
+                className="font-mono text-[11px] text-tertiary transition-colors hover:text-fg py-2 touch-manipulation min-h-[44px] flex items-center justify-center"
               >
                 Voltar ao topo
               </button>

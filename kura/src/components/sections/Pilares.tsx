@@ -14,16 +14,16 @@ export function Pilares() {
           <span className="mb-3 inline-block font-mono text-[10px] sm:text-xs font-medium uppercase tracking-[0.04em] text-muted">
             {pillars.label}
           </span>
-          <h2 className="mb-4 font-heading font-bold tracking-[-0.025em] text-fg sm:mb-6" style={{ fontSize: "var(--text-display)" }}>
-            {pillars.title}
+          <h2 className="mb-4 font-heading font-bold tracking-[-0.025em] sm:mb-6" style={{ fontSize: "var(--text-display)" }}>
+            <span className="headline-highlight">{pillars.title}</span>
           </h2>
           <div className="grid grid-cols-1 gap-3 @md:grid-cols-2 @md:gap-4 @6xl:grid-cols-3 @6xl:gap-5">
             {pillars.items.map((pillar) => (
               <div
                 key={pillar.number}
-                className="border border-border/60 p-4 transition-all duration-200 hover:border-border hover:bg-surface-2/30 sm:p-4 md:p-5"
+                className="border border-border-strong border-l-2 border-l-border-strong p-4 transition-all duration-200 hover:border-border hover:bg-surface-2/30 sm:p-4 md:p-5"
               >
-                <span className="mb-1.5 block font-mono text-lg font-bold text-border sm:text-xl">
+                <span className="mb-1.5 block font-mono text-lg font-bold text-tertiary sm:text-xl">
                   {pillar.number}
                 </span>
                 <h3 className="mb-1 font-heading text-sm font-bold tracking-[-0.015em] text-fg">
