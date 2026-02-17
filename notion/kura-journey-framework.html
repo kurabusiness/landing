@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1400, initial-scale=1">
+<title>KURA — Framework de Jornada do Cliente</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0A0A0A;
+    color: #E8E8E8;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 48px;
+    min-width: 1400px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 56px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 32px;
+  }
+
+  .header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #fff;
+  }
+
+  .header .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .header .refs {
+    text-align: right;
+    font-size: 11px;
+    color: #555;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.8;
+  }
+
+  .refs span { color: #888; }
+
+  /* ===== AWARENESS BAR ===== */
+  .awareness-bar {
+    display: flex;
+    margin-bottom: 12px;
+    gap: 2px;
+  }
+
+  .awareness-stage {
+    flex: 1;
+    padding: 10px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border: 1px solid #333;
+  }
+
+  .awareness-stage.a1 { background: #111; color: #666; }
+  .awareness-stage.a2 { background: #151515; color: #888; }
+  .awareness-stage.a3 { background: #1a1a1a; color: #aaa; }
+  .awareness-stage.a4 { background: #1f1f1f; color: #ccc; }
+  .awareness-stage.a5 { background: #252525; color: #fff; }
+
+  .awareness-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  /* ===== MAIN JOURNEY ===== */
+  .journey-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+
+  .phase {
+    background: #111;
+    border: 1px solid #222;
+    padding: 16px 12px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .phase:hover {
+    border-color: #444;
+    background: #151515;
+  }
+
+  .phase-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: #444;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .phase-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    min-height: 36px;
+  }
+
+  .phase-desc {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .phase-emotion {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #1f1f1f;
+    font-size: 10px;
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .phase-emotion::before {
+    content: '💭 ';
+    font-style: normal;
+  }
+
+  /* ===== PRODUCT BAR ===== */
+  .product-bar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+
+  .product-cell {
+    padding: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 72px;
+  }
+
+  .product-cell .ticket {
+    font-weight: 400;
+    font-size: 9px;
+    opacity: 0.7;
+  }
+
+  .product-free {
+    background: #0d1f0d;
+    border-color: #1a3a1a;
+    color: #4ade80;
+    grid-column: 1 / 4;
+  }
+
+  .product-low {
+    background: #1a1a0d;
+    border-color: #3a3a1a;
+    color: #fbbf24;
+    grid-column: 4 / 5;
+  }
+
+  .product-mid {
+    background: #1a120d;
+    border-color: #3a2a1a;
+    color: #fb923c;
+    grid-column: 5 / 7;
+  }
+
+  .product-high {
+    background: #1a0d0d;
+    border-color: #3a1a1a;
+    color: #f87171;
+    grid-column: 7 / 9;
+  }
+
+  .product-saas {
+    background: #0d0d1a;
+    border-color: #1a1a3a;
+    color: #818cf8;
+    grid-column: 9 / 10;
+  }
+
+  /* ===== MODEL BAR ===== */
+  .model-bar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin-bottom: 48px;
+  }
+
+  .model-cell {
+    padding: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    text-align: center;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .model-cell.free-model { grid-column: 1 / 4; }
+  .model-cell.lt-model { grid-column: 4 / 5; }
+  .model-cell.diy-model { grid-column: 5 / 7; color: #666; }
+  .model-cell.dwy-model { grid-column: 7 / 9; color: #888; }
+  .model-cell.dfy-model { grid-column: 9 / 10; color: #aaa; }
+
+  /* ===== ARROW CONNECTORS ===== */
+  .arrows-row {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+
+  .arrow-cell {
+    text-align: center;
+    padding: 4px 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  /* ===== CONVERSION TRIGGERS ===== */
+  .triggers-section {
+    margin-top: 0;
+  }
+
+  .triggers-section h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.3px;
+  }
+
+  .triggers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .trigger-card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 20px;
+    transition: all 0.3s;
+  }
+
+  .trigger-card:hover {
+    border-color: #444;
+  }
+
+  .trigger-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .trigger-label.tl-green { color: #4ade80; }
+  .trigger-label.tl-yellow { color: #fbbf24; }
+  .trigger-label.tl-orange { color: #fb923c; }
+  .trigger-label.tl-red { color: #f87171; }
+
+  .trigger-from {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 6px;
+  }
+
+  .trigger-arrow {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .trigger-to {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 600;
+  }
+
+  .trigger-mechanism {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 10px;
+    color: #555;
+    line-height: 1.5;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ===== FLYWHEEL ===== */
+  .flywheel-section {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 2px solid #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .flywheel-left h2, .flywheel-right h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .metric-label {
+    font-size: 11px;
+    color: #777;
+  }
+
+  .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .flywheel-loop {
+    background: #111;
+    border: 1px solid #222;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .loop-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .loop-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: 800;
+    color: #222;
+    min-width: 32px;
+  }
+
+  .loop-text {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .loop-text strong { color: #ccc; }
+
+  .loop-connector {
+    margin-left: 12px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <h1>KURA — JORNADA DO CLIENTE</h1>
+    <div class="subtitle">De "tô preso no plantão" até "tenho meu negócio e a vida que eu quero"</div>
+  </div>
+  <div class="refs">
+    <span>Refs:</span> Schwartz (5 Levels of Awareness) · Brunson (Value Ladder)<br>
+    Hormozi ($100M Offers) · Empiricus (Tese Provocativa)
+  </div>
+</div>
+
+<!-- AWARENESS BAR -->
+<div class="awareness-label">NÍVEL DE CONSCIÊNCIA (EUGENE SCHWARTZ)</div>
+<div class="awareness-bar">
+  <div class="awareness-stage a1">Inconsciente</div>
+  <div class="awareness-stage a2">Consciente do Problema</div>
+  <div class="awareness-stage a3">Consciente da Solução</div>
+  <div class="awareness-stage a4">Consciente do Produto</div>
+  <div class="awareness-stage a5">Mais Consciente</div>
+</div>
+
+<!-- ARROWS -->
+<div class="arrows-row">
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+</div>
+
+<!-- MAIN JOURNEY PHASES -->
+<div class="journey-grid">
+
+  <div class="phase">
+    <div class="phase-number">FASE 01</div>
+    <div class="phase-title">Criar o Problema</div>
+    <div class="phase-desc">Conteúdo mostra que a rotina dele não precisa ser assim. Ele nem sabia que tinha um problema.</div>
+    <div class="phase-emotion">"Cara, é verdade... não precisa ser assim"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 02</div>
+    <div class="phase-title">Apresentar a Tese</div>
+    <div class="phase-desc">A saída é criar o próprio negócio. Não é mais plantão, mais hora. É A solução. Ele se sente visto.</div>
+    <div class="phase-emotion">"Alguém finalmente entende o que eu passo"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 03</div>
+    <div class="phase-title">Identificação com a Marca</div>
+    <div class="phase-desc">Site bonito, copy boa, visual limpo. Não é guru. É diferente de tudo que ele já viu.</div>
+    <div class="phase-emotion">"Isso aqui é sério, não é mais um coach"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 04</div>
+    <div class="phase-title">Captura</div>
+    <div class="phase-desc">Lead magnet → email → follow no IG. Entra no funil. Email de boas-vindas que já entrega valor.</div>
+    <div class="phase-emotion">"Vou acompanhar isso aqui"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 05</div>
+    <div class="phase-title">Nutrição Multicanal</div>
+    <div class="phase-desc">Email + IG + YouTube. Consistência e qualidade. Vicia. A Kura aparece em todo lugar.</div>
+    <div class="phase-emotion">"Toda semana tem coisa boa, vou acompanhar"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 06</div>
+    <div class="phase-title">1º Pagamento</div>
+    <div class="phase-desc">Compra produto barato. Abre a cabeça pro conceito. Acha irado mas não sabe executar.</div>
+    <div class="phase-emotion">"Quero isso mas como faço?"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 07</div>
+    <div class="phase-title">Formação Completa</div>
+    <div class="phase-desc">Personal MBA pra médicos. Visão do jogo todo. Sai sabendo o que fazer. Executar é outra história.</div>
+    <div class="phase-emotion">"Agora eu sei o jogo, mas preciso de ajuda"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 08</div>
+    <div class="phase-title">Mentoria</div>
+    <div class="phase-desc">Fazer junto. Validar, acelerar, trocar com pares. Nunca mais toma decisão sozinho.</div>
+    <div class="phase-emotion">"Tenho meu time, tô implementando"</div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-number">FASE 09</div>
+    <div class="phase-title">Software</div>
+    <div class="phase-desc">SaaS automatiza a operação. A ferramenta faz por ele. Se vende sozinho — ele já tá imerso.</div>
+    <div class="phase-emotion">"Meu negócio roda sozinho"</div>
+  </div>
+
+</div>
+
+<!-- PRODUCT BAR -->
+<div class="arrows-row">
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+  <div class="arrow-cell">↓</div>
+</div>
+
+<div class="product-bar">
+  <div class="product-cell product-free">
+    PRODUTO 1 — GRATUITO
+    <span class="ticket">Ebooks · YouTube · IG · Mini-cursos</span>
+    <span class="ticket">R$ 0</span>
+  </div>
+  <div class="product-cell product-low">
+    PRODUTO 2
+    <span class="ticket">Low Ticket</span>
+    <span class="ticket">R$ 97–297</span>
+  </div>
+  <div class="product-cell product-mid">
+    PRODUTO 3 — CURSO
+    <span class="ticket">Implementação + Bônus</span>
+    <span class="ticket">R$ 2K–5K</span>
+  </div>
+  <div class="product-cell product-high">
+    PRODUTO 4 — MENTORIA
+    <span class="ticket">Comunidade + Networking</span>
+    <span class="ticket">R$ 8K–15K</span>
+  </div>
+  <div class="product-cell product-saas">
+    SAAS
+    <span class="ticket">Prontuário</span>
+    <span class="ticket">R$ 200-500/mês</span>
+  </div>
+</div>
+
+<!-- MODEL BAR -->
+<div class="model-bar">
+  <div class="model-cell free-model">CONTEÚDO → CONFIANÇA</div>
+  <div class="model-cell lt-model">AHA MOMENT</div>
+  <div class="model-cell diy-model">DIY — FAZ SOZINHO</div>
+  <div class="model-cell dwy-model">DWY — FAZ JUNTO</div>
+  <div class="model-cell dfy-model">DFY — FAZ POR ELE</div>
+</div>
+
+<!-- CONVERSION TRIGGERS -->
+<div class="triggers-section">
+  <h2>GATILHOS DE CONVERSÃO — O QUE FAZ ELE SUBIR NA ESCADA</h2>
+  <div class="triggers-grid">
+
+    <div class="trigger-card">
+      <div class="trigger-label tl-green">GRATUITO → LOW TICKET</div>
+      <div class="trigger-from">Ele confia na Kura</div>
+      <div class="trigger-arrow">↓</div>
+      <div class="trigger-to">Mas quer mais profundidade</div>
+      <div class="trigger-mechanism">
+        Gatilho: 12 meses de conteúdo gratuito construíram confiança. Ele já pensa "se o gratuito é assim, o pago deve ser absurdo". Preço baixo elimina risco.
+      </div>
+    </div>
+
+    <div class="trigger-card">
+      <div class="trigger-label tl-yellow">LOW TICKET → CURSO</div>
+      <div class="trigger-from">Ele entende o jogo</div>
+      <div class="trigger-arrow">↓</div>
+      <div class="trigger-to">Mas não sabe jogar</div>
+      <div class="trigger-mechanism">
+        Gatilho: O "aha moment" + gap de implementação. Ele viu o mapa mas não tem GPS. Pesquisa e não acha nada parecido lá fora. Sente vazio, necessidade.
+      </div>
+    </div>
+
+    <div class="trigger-card">
+      <div class="trigger-label tl-orange">CURSO → MENTORIA</div>
+      <div class="trigger-from">Ele sabe o que fazer</div>
+      <div class="trigger-arrow">↓</div>
+      <div class="trigger-to">Mas precisa de alguém junto</div>
+      <div class="trigger-mechanism">
+        Gatilho: Curso deu visão completa + aulas bônus mostraram o "como". Mas cada negócio é diferente — dúvida aparece toda hora, decisão precisa de validação.
+      </div>
+    </div>
+
+    <div class="trigger-card">
+      <div class="trigger-label tl-red">MENTORIA → SAAS</div>
+      <div class="trigger-from">O negócio tá rodando</div>
+      <div class="trigger-arrow">↓</div>
+      <div class="trigger-to">Agora quer automatizar tudo</div>
+      <div class="trigger-mechanism">
+        Gatilho: Negócio funcionando = operação crescendo. Ele quer parar de fazer manual. A ferramenta se vende sozinha porque ele já tá dentro do método.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FLYWHEEL + METRICS -->
+<div class="flywheel-section">
+  <div class="flywheel-left">
+    <h2>FLYWHEEL — O CICLO VIRTUOSO</h2>
+    <div class="flywheel-loop">
+      <div class="loop-step">
+        <div class="loop-num">01</div>
+        <div class="loop-text"><strong>Conteúdo gratuito</strong> atrai médico frio</div>
+      </div>
+      <div class="loop-connector">↓</div>
+      <div class="loop-step">
+        <div class="loop-num">02</div>
+        <div class="loop-text"><strong>Lead magnet</strong> captura email</div>
+      </div>
+      <div class="loop-connector">↓</div>
+      <div class="loop-step">
+        <div class="loop-num">03</div>
+        <div class="loop-text"><strong>Nutrição multicanal</strong> constrói confiança</div>
+      </div>
+      <div class="loop-connector">↓</div>
+      <div class="loop-step">
+        <div class="loop-num">04</div>
+        <div class="loop-text"><strong>Produto pago</strong> entrega resultado</div>
+      </div>
+      <div class="loop-connector">↓</div>
+      <div class="loop-step">
+        <div class="loop-num">05</div>
+        <div class="loop-text"><strong>Resultado gera</strong> depoimento + indicação</div>
+      </div>
+      <div class="loop-connector">↓</div>
+      <div class="loop-step">
+        <div class="loop-num">06</div>
+        <div class="loop-text"><strong>Prova social</strong> atrai mais médicos → volta pro 01</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flywheel-right">
+    <h2>ESCADA DE VALOR — VISÃO GERAL</h2>
+    <div class="metric-row">
+      <span class="metric-label">Produto 1 (Gratuito)</span>
+      <span class="metric-value" style="color: #4ade80;">R$ 0 → Confiança + Lista</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label">Produto 2 (Low Ticket)</span>
+      <span class="metric-value" style="color: #fbbf24;">R$ 97-297 → 1º Pagamento + Gap</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label">Produto 3 (Curso DIY)</span>
+      <span class="metric-value" style="color: #fb923c;">R$ 2-5K → Visão Completa</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label">Produto 4 (Mentoria DWY)</span>
+      <span class="metric-value" style="color: #f87171;">R$ 8-15K → Implementação</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label">SaaS (DFY)</span>
+      <span class="metric-value" style="color: #818cf8;">R$ 200-500/mês → Automação</span>
+    </div>
+    <div class="metric-row" style="margin-top: 20px; padding-top: 20px; border-top: 2px solid #222;">
+      <span class="metric-label">LTV estimado (cliente completo)</span>
+      <span class="metric-value" style="color: #fff; font-size: 16px;">R$ 25K-45K</span>
+    </div>
+
+    <div style="margin-top: 32px; padding: 16px; background: #111; border: 1px solid #222;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #555; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Princípio Central</div>
+      <div style="font-size: 13px; color: #ccc; line-height: 1.6;">Cada produto resolve uma dor e <strong style="color: #fff;">cria a necessidade do próximo</strong>. O gap entre saber e fazer é o motor da escada.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span>KURA — BUSINESS PLAN 2026</span>
+  <span>DOCUMENTO INTERNO · NÃO DISTRIBUIR</span>
+</div>
+
+</body>
+</html>
