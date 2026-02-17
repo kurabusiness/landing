@@ -99,8 +99,8 @@ export const pillars = {
   items: [
     {
       number: "01",
-      title: "Mentalidade",
-      body: "Sustentar tudo que vem depois. Pensar como dono, não como empregado. Lidar com a mudança de identidade, com o medo de vender, com a resistência em se expor. A base que sustenta os outros três.",
+      title: "Mentalidade e Posicionamento",
+      body: "De empregado para empresário: pensar no cliente, não em si. Na consulta você já faz isso. No negócio, a mesma lógica. Você é seu nicho: sua história como médico, sua visão, seus valores. Valor antes de venda. Foco no outro. A base que sustenta os outros três.",
     },
     {
       number: "02",
