@@ -227,6 +227,15 @@ O problema não é só clínico — é existencial. O médico que não criar o p
 
 Três canais + uma escada de produtos.
 
+## Estrutura da Metodologia
+
+A metodologia da Kura é organizada em 4 pilares. Cada pilar se divide em subcomponentes, aprofundados conforme o estilo e os objetivos do médico.
+
+1. **Mentalidade** — Base que sustenta os outros três. Pensar como dono, não como empregado. Lidar com a mudança de identidade, com o medo de vender, com a resistência em se expor.
+2. **Produtos e/ou Serviços** — A base da oferta. O que o médico está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online.
+3. **Conteúdo** — A forma como comunica o valor do produto. Instagram, YouTube, e-mail. Cada canal com seus passos e boas práticas.
+4. **Processo de Vendas** — As etapas para atrair, engajar e converter clientes. Funil que faz sentido pro médico.
+
 ## Canais (Foco Exclusivo)
 
 - **Instagram** — Descoberta, engajamento, top of funnel
@@ -293,16 +302,12 @@ Módulo de Aquisição de Pacientes — não vamos ensinar como operar Google Ad
 
 **O resultado:** Ele sai do curso com visão de negócio completa. Sabe o que precisa ser feito, entende cada peça do quebra-cabeça, tem referências de ferramentas. Mas colocar tudo em prática sozinho é difícil — e é aí que ele vai querer a mentoria (Produto 4 — DWY) ou o app (SaaS — DFY).
 
-**Pilares da Formação (Módulos):**
+**Pilares da Formação (Módulos):** Seguem a estrutura da metodologia (Mentalidade, Produtos e/ou Serviços, Conteúdo, Processo de Vendas).
 
-1. **Mindset: De Empregado para Empreendedor** — A maior barreira do médico. Como pensar como dono de negócio, não como prestador de serviço. Visão de longo prazo, riscos calculados, mentalidade de construção
-2. **Posicionamento & Nicho** — Como encontrar seu espaço no mercado. Diferenciação, autoridade, especialização. Por que o generalista morre e o especialista prospera
-3. **Marketing Digital Ético** — Como atrair pacientes sem ferir o CFM. Presença online, conteúdo, Google, Instagram — o modelo, não o tutorial
-4. **Aquisição de Pacientes** — Como funciona o funil de um consultório. Do boca a boca ao digital, passando por indicações, parcerias, SEO local. Como ter agenda cheia
-5. **Finanças do Negócio** — Precificação inteligente, fluxo de caixa, PJ vs PF, tributação, separação de caixa pessoal e empresarial
-6. **Operação & Gestão** — Processos, equipe, indicadores, delegação. Como o consultório roda sem você estar lá 24h
-7. **Relacionamento com Pacientes** — Retenção, experiência, fidelização. O paciente que volta e indica
-8. **Tecnologia & Automação como Alavanca** — Ferramentas que existem, o que resolvem, como avaliar. IA, gestão, agendamento, telemedicina — como meio, não como fim
+1. **Mentalidade** — De empregado para empreendedor. A maior barreira do médico. Pensar como dono, não como prestador. Medo de vender, resistência em se expor. Visão de longo prazo, riscos calculados.
+2. **Produtos e/ou Serviços** — Posicionamento e nicho. O que oferecer (consultório, clínica, teleconsulta, curso). Precificação, finanças do negócio (PJ vs PF, tributação, fluxo de caixa). Operação e gestão. Relacionamento com pacientes. Tecnologia e automação como alavanca.
+3. **Conteúdo** — Como comunicar o valor. Marketing digital ético. Presença online, Instagram, YouTube, e-mail. O modelo, não o tutorial.
+4. **Processo de Vendas** — Aquisição de pacientes. Como funciona o funil. Do boca a boca ao digital, indicações, parcerias, SEO local. Atrair, engajar, converter.
 
 **Referências de formato:** Personal MBA (Josh Kaufman), Modern Mastery (Dan Koe), Gym Launch (Alex Hormozi) — todos ensinam o jogo estratégico, não tutoriais técnicos
 
@@ -565,7 +570,7 @@ Já temos uma versão em construção com:
 
 - Fundo preto, tipografia branca bold
 - Nav: Problema · Manifesto · Prova · Começar + ícones email/IG
-- Hero copy: "Doutor(a), você não precisa de mais plantão, nem achar um serviço melhor. Precisa criar seu negócio."
+- Hero copy: "Doc, você não precisa de mais um plantão." Sub: "Está na hora de ser dono do seu negócio."
 - CTA: "Começar a jornada"
 - Estética geral tá no caminho certo — a copy precisa ser revisada com base no business plan final
 
