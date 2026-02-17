@@ -55,7 +55,7 @@ export const problem = [
   "Aí você abre o Instagram e vê aquele colega. Você sabe qual. Formou junto, ou até depois de você. Você estudou, viveu, atendeu. Mas ele tá lá: agenda cheia, consultando de casa, produzindo conteúdo, paciente vindo de tudo quanto é lugar.",
   "Você olha aquele vídeo e pensa: eu faria isso. E faria. Só que ele aprendeu uma coisa que ninguém te ensinou: como transformar competência em negócio. A diferença? Ele entendeu o jogo antes de você.",
   "E quando você procura ajuda pra sair dessa, só encontra coach genérico que nunca pisou num consultório e não entende suas dores. Ou ofertas que prometem tudo e não mostram o caminho. Nenhum dos dois tem o que você quer aprender. Ninguém te mostra o caminho de verdade.",
-  "Não precisa ser assim. O caminho existe. Só ninguém te mostrou. A ideia é uma: o médico pode, e deve, ser dono do próprio negócio. É isso que muda tudo. É isso que liberta. A Kura te mostra como.",
+  "Não precisa ser assim. O caminho existe. Só faltava quem te mostrasse. A ideia é uma: o médico pode, e deve, ser dono do próprio negócio. É isso que muda tudo. É isso que liberta. A Kura te mostra como.",
 ];
 
 // ─── Manifesto ──────────────────────────────────────────────
