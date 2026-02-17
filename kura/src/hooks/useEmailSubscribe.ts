@@ -24,7 +24,7 @@ export function useEmailSubscribe() {
 
       if (data.status === "subscribed" || data.status === "already_subscribed") {
         setStatus(data.status === "subscribed" ? "success" : "already_subscribed");
-        setMessage(data.message);
+        setMessage(data.message ?? "");
         if (typeof window !== "undefined") {
           window.location.href = "/obrigado";
         }
