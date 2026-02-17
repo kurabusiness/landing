@@ -216,7 +216,7 @@ export const faq = [
 // ─── CTA Final ──────────────────────────────────────────────
 export const ctaFinal = {
   headline: "Cadastre seu e-mail.",
-  subheadline: "Quem entra agora fica na frente.",
+  subheadline: "Conteúdos exclusivos e benefícios de early adopter.",
   buttonText: "Participar",
   buttonTextLoading: "Entrando...",
   placeholder: "Seu e-mail",

@@ -45,12 +45,12 @@ export function EmailGate() {
   const showSuccess = status === "success";
 
   return (
-    <ScrollSection id="cta" className="flex min-h-dvh flex-col justify-center bg-bg pt-8 sm:pt-10 md:pt-16 pb-8 sm:pb-10 md:pb-12">
-      <Container size="text" className="max-w-lg">
+    <ScrollSection id="cta" className="flex flex-col justify-center bg-bg py-8 sm:py-10 md:py-12">
+      <Container size="text" className="max-w-md">
         <div className="text-center">
           {showSuccess ? (
             <h2
-              className="mt-4 mb-4 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
+              className="mt-2 mb-3 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
               style={{ fontSize: "var(--text-display)" }}
             >
               <span className="headline-highlight">Você está dentro.</span>
@@ -58,27 +58,27 @@ export function EmailGate() {
           ) : (
             <>
               <h2
-                className="mb-2 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
-                style={{ fontSize: "var(--text-display)" }}
+                className="mb-1.5 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
+                style={{ fontSize: "var(--text-title)" }}
               >
                 <span className="headline-highlight">{manifesto.emailLabel}</span>
               </h2>
-              <p className="mb-4 font-heading text-fg" style={{ fontSize: "var(--text-lead)" }}>
+              <p className="mb-3 font-heading text-fg" style={{ fontSize: "var(--text-body)" }}>
                 {ctaFinal.headline}
               </p>
             </>
           )}
-          <p className="mx-auto mt-4 max-w-md leading-[1.6] text-muted" style={{ fontSize: "var(--text-body)" }}>
+          <p className="mx-auto max-w-sm leading-normal text-muted" style={{ fontSize: "var(--text-body)" }}>
             {showSuccess
               ? "Obrigado por se cadastrar. Parabéns pela iniciativa, você deu o primeiro passo."
               : ctaFinal.subheadline}
           </p>
         </div>
 
-        <div className="mx-auto mt-8 max-w-md sm:mt-10 md:mt-12">
+        <div className="mx-auto mt-5 max-w-sm sm:mt-6">
           {showSuccess ? (
-            <div className="flex flex-col items-center gap-8">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent/5">
+            <div className="flex flex-col items-center gap-5">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent/5">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
@@ -139,7 +139,7 @@ export function EmailGate() {
                 </ul>
               )}
 
-              <form onSubmit={handleSubmit} id="mc-embedded-subscribe-form" noValidate className="border border-border-strong rounded-sm p-4 sm:p-5">
+              <form onSubmit={handleSubmit} id="mc-embedded-subscribe-form" noValidate className="border border-border-strong rounded-sm p-3 sm:p-4">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
                   <input
                     type="email"
@@ -173,7 +173,7 @@ export function EmailGate() {
           )}
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-4 pt-6 sm:mt-12 sm:pt-8 md:mt-16 md:gap-5 md:pt-10">
+        <div className="mt-6 flex flex-col items-center gap-3 pt-4 sm:mt-8 sm:pt-6">
           <button
             type="button"
             onClick={() => {
