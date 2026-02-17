@@ -105,7 +105,7 @@ export const pillars = {
     {
       number: "02",
       title: "Produtos e/ou Serviços",
-      body: "A base da sua oferta. O que você está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online. MVP primeiro. Seu conhecimento empacotado de forma que gera renda.",
+      body: "A base da sua oferta. O que você está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online. Encontrar o market fit. O que você sabe vira produto e trabalha por você.",
     },
     {
       number: "03",
