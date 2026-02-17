@@ -92,39 +92,30 @@ export const manifesto = {
 };
 
 // ─── Pillars ────────────────────────────────────────────────
+// Estrutura: Mentalidade, Produto, Conteúdo, Processo de Vendas
 export const pillars = {
   label: "Pilares",
   title: "O\u00A0que acreditamos.",
   items: [
     {
       number: "01",
-      title: "Posicionamento",
-      body: "Se destacar no meio de centenas. Encontrar seu nicho. Construir a base do seu negócio com uma marca que as pessoas reconhecem.",
+      title: "Mentalidade",
+      body: "Sustentar tudo que vem depois. Pensar como dono, não como empregado. Lidar com a mudança de identidade, com o medo de vender, com a resistência em se expor. A base que sustenta os outros três.",
     },
     {
       number: "02",
-      title: "Presença Digital",
-      body: "Escolher uma plataforma. Criar conteúdo que atrai. Construir audiência pro seu negócio. Capturar atenção na internet.",
+      title: "Produto",
+      body: "A base da sua oferta. O que você está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online. Seu conhecimento empacotado de forma que gera renda.",
     },
     {
       number: "03",
-      title: "Produtos Digitais",
-      body: "Empacotar seu conhecimento em produto. Cursos, mentorias, programas online. Seu negócio gerando renda sem depender da sua presença.",
+      title: "Conteúdo",
+      body: "A forma como você comunica o valor do seu produto. Instagram, YouTube, e-mail. Cada canal com seus passos e boas práticas. Construir audiência e autoridade antes de vender.",
     },
     {
       number: "04",
-      title: "Marketing e Vendas",
-      body: "Atrair pacientes e clientes pro seu negócio pela internet. Encher sua agenda. Construir funil. Vender sem parecer vendedor.",
-    },
-    {
-      number: "05",
-      title: "Automação e sistemas",
-      body: "O trabalho de dez feito por uma pessoa. Seu negócio rodando com processos que funcionam sem você estar presente.",
-    },
-    {
-      number: "06",
-      title: "Gestão Financeira",
-      body: "PJ, impostos, investimento, patrimônio. A base do seu negócio que ninguém ensinou. Sem isso, o negócio não fica de pé.",
+      title: "Processo de Vendas",
+      body: "As etapas para atrair, engajar e converter clientes. Funil que faz sentido pro médico. Capturar atenção, nutrir, fechar. Vender sem parecer vendedor.",
     },
   ],
 };
