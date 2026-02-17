@@ -9,7 +9,7 @@ export function Transformation() {
   const scrollToCta = () => scrollToSection("cta");
 
   return (
-    <ScrollSection id="diferencial" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:pt-8 md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
+    <ScrollSection id="diferencial" className="bg-bg pt-6 pb-8 sm:pt-8 sm:pb-10 md:pt-12 md:pb-12">
       <Container size="grid">
         <div className="mb-4 sm:mb-5 md:mb-6">
           <h2

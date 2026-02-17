@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <JourneyIndicator />
-      <main className="scroll-snap-container pb-[calc(5.5rem+env(safe-area-inset-bottom,0px))] sm:pb-[calc(6rem+env(safe-area-inset-bottom,0px))] md:pb-[calc(6.5rem+env(safe-area-inset-bottom,0px))]">
+      <main id="main-scroll" className="scroll-snap-container">
         <Hero />
         <Problem />
         <ManifestoTeaser />
@@ -22,8 +22,8 @@ export default function Home() {
         <Transformation />
         <EmailGate />
         <FAQ />
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

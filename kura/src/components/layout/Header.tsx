@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { SITE, navLinks } from "@/lib/content";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -8,6 +8,15 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const activeSection = useActiveSection();
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
+    return () => document.body.classList.remove("menu-open");
+  }, [mobileOpen]);
 
   return (
     <header
@@ -86,34 +95,43 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile nav dropdown */}
+      {/* Mobile nav overlay + dropdown */}
       {mobileOpen && (
-        <div
-          className="absolute left-0 right-0 top-14 md:top-16 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto"
-          style={{ maxHeight: "calc(100dvh - 3.5rem - env(safe-area-inset-top, 0px))" }}
-        >
-          <nav className="flex flex-col py-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={(e) => {
-                  setMobileOpen(false);
-                  const id = link.href.replace("#", "");
-                  if (id) {
-                    e.preventDefault();
-                    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }
-                }}
-                className={`px-4 py-3.5 font-mono text-sm transition-colors active:bg-surface-2 active:text-accent ${
-                  link.href.replace("#", "") === activeSection ? "font-semibold text-fg" : "text-tertiary"
-                }`}
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        </div>
+        <>
+          <div
+            className="fixed top-14 left-0 right-0 bottom-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+            aria-hidden
+            onClick={() => setMobileOpen(false)}
+          />
+          <div
+            className="absolute left-0 right-0 top-14 z-50 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto"
+            style={{ maxHeight: "calc(100dvh - 3.5rem - env(safe-area-inset-top, 0px))" }}
+          >
+            <nav className="flex flex-col py-2">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => {
+                    setMobileOpen(false);
+                    const id = link.href.replace("#", "");
+                    if (id) {
+                      e.preventDefault();
+                      requestAnimationFrame(() => {
+                        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                      });
+                    }
+                  }}
+                  className={`px-5 py-4 font-mono text-sm min-h-[48px] flex items-center transition-colors active:bg-surface-2 active:text-accent touch-manipulation ${
+                    link.href.replace("#", "") === activeSection ? "font-semibold text-fg" : "text-tertiary"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </>
       )}
     </header>
   );

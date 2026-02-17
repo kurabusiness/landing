@@ -45,7 +45,7 @@ export function EmailGate() {
   const showSuccess = status === "success";
 
   return (
-    <ScrollSection id="cta" className="flex min-h-dvh flex-col justify-center bg-bg pt-8 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:pt-10 md:pt-16 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
+    <ScrollSection id="cta" className="flex min-h-dvh flex-col justify-center bg-bg pt-8 sm:pt-10 md:pt-16 pb-8 sm:pb-10 md:pb-12">
       <Container size="text" className="max-w-lg">
         <div className="text-center">
           {!showSuccess && (

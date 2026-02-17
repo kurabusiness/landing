@@ -1,5 +1,5 @@
 /**
- * Scroll suave para seção. Usa scrollIntoView no scroll container.
+ * Scroll suave para seção. Usa scrollIntoView no scroll container (main).
  */
 export function scrollToSection(id: string) {
   const target = document.getElementById(id);

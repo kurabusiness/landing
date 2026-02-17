@@ -81,6 +81,11 @@ main.scroll-snap-container {
   overscroll-behavior-y: contain;
 }
 
+body.menu-open main.scroll-snap-container {
+  overflow: hidden;
+  touch-action: none;
+}
+
 body {
   background-color: var(--bg);
   color: var(--fg);
@@ -89,6 +94,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   min-height: 100dvh;
+}
+
+p, li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
 }
 
 /* ─── Selection ─────────────────────────────────────────────── */

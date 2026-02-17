@@ -8,7 +8,7 @@ import { pillars } from "@/lib/content";
 export function Pilares() {
 
   return (
-    <ScrollSection id="pillars" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:pt-8 md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
+    <ScrollSection id="pillars" className="bg-bg pt-6 pb-8 sm:pt-8 sm:pb-10 md:pt-12 md:pb-12">
       <Container size="grid" className="space-y-5 sm:space-y-6 md:space-y-8">
         <div>
           <span className="mb-3 inline-block font-mono text-[10px] sm:text-xs font-medium uppercase tracking-[0.04em] text-muted">
