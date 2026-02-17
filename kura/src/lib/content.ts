@@ -40,7 +40,7 @@ export const MANIFESTO_VIDEO_ID: string | null = null;
 // ─── Hero ───────────────────────────────────────────────────
 export const hero = {
   headline: "Doc, você não precisa de mais um plantão.",
-  sub: "Você precisa criar o seu negócio.",
+  sub: "Está na hora de ser dono do seu negócio.",
   detail: "Conquiste o controle da sua vida, pratique medicina nos seus próprios termos e tenha um negócio lucrativo.",
   cta: "Começar a jornada",
 };
