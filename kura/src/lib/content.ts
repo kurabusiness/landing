@@ -47,8 +47,8 @@ export const hero = {
 
 // ─── Problem (Despertar de consciência) — BP v1 rascunho v2 ───
 export const problem = [
-  "Você estudou anos. Abriu mão de fim de semana, feriado, noite. Sacrificou tempo com a família. Fez tudo certo. E hoje? Vive de plantão em plantão. Sem CLT, sem previsibilidade, sem saber quanto entra mês que vem. A conta aperta e a saída é sempre a mesma: pegar mais um serviço.",
-  "A faculdade te ensinou a ser médico. Não te ensinou a ser dono. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. Seis anos cuidando de gente. Zero minutos cuidando do próprio negócio.",
+  "Você se dedicou. Abriu mão de fim de semana, feriado, noite. Sacrificou tempo com a família. Fez tudo certo. E hoje? Vive de plantão em plantão. Sem CLT, sem previsibilidade, sem saber quanto entra mês que vem. A conta aperta e a saída é sempre a mesma: pegar mais um serviço.",
+  "A faculdade te ensinou a ser médico. Não te ensinou a ser dono do seu negócio. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. Muito tempo cuidando de gente. Zero minutos cuidando do próprio negócio.",
   "E o mercado não espera. Centenas de médicos fazendo a mesma coisa, na mesma cidade, disputando o mesmo paciente. Sem saber como se diferenciar. Sem saber nem por onde começar.",
   "Quando você tenta sair desse ciclo, as coisas complicam. Abre uma clínica: sociedade mal estruturada, precificação errada, ponto longe. A agenda continua não sendo sua. E o tempo vai embora no trânsito e em reuniões que não levam a nada.",
   "Aquela liberdade que você imaginou quando escolheu medicina? Praticar nos seus próprios termos, ser soberano na profissão? Ficou pra depois. Sempre pra depois. Te dizem que isso é normal. Que \"faz parte\". Que todo mundo passa por isso no começo.",
@@ -207,9 +207,9 @@ export const faq = [
       "Exatamente. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. A Kura ensina o que faltou. O que você precisa pra construir seu negócio.",
   },
   {
-    question: "Quem é a Kura?",
+    question: "O que é a Kura?",
     answer:
-      "Educação em negócios feita pra médicos. O método foi construído por quem entende medicina e negócios. A marca fala por si. O conteúdo entrega.",
+      "Educação em negócios feita exclusivamente para médicos. Acreditamos que criar o próprio negócio é a solução pra quem quer mais liberdade, tempo e autonomia. A Kura mostra o caminho: posicionamento, presença digital, produtos e gestão — o que a faculdade não ensinou. O conteúdo entrega.",
   },
 ];
 
