@@ -100,7 +100,7 @@ export const pillars = {
     {
       number: "01",
       title: "Mentalidade e Posicionamento",
-      body: "De empregado para empresário: pensar no cliente, não em si. Na consulta você já faz isso. No negócio, a mesma lógica. Você é seu nicho: sua história como médico, sua visão, seus valores. Valor antes de venda. Foco no outro. A base que sustenta os outros três.",
+      body: "De empregado para empresário: pensar no cliente, não em si. Na consulta você já faz isso. No negócio, a mesma lógica. Sua história, sua visão, seus valores como médico formam seu posicionamento. Valor antes de venda. Foco no outro. A base que sustenta os outros três.",
     },
     {
       number: "02",

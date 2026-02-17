@@ -1,6 +1,6 @@
 # KURA — Business Plan v2
 
-Versão consolidada com ajustes holísticos: pilares (Mentalidade e Posicionamento, Produtos e/ou Serviços, Conteúdo, Processo de Vendas), copy do site, filosofia "você é seu nicho", foco no cliente, market fit.
+Versão consolidada com ajustes holísticos: pilares (Mentalidade e Posicionamento, Produtos e/ou Serviços, Conteúdo, Processo de Vendas), copy do site, foco no cliente, market fit.
 
 ---
 
@@ -112,7 +112,7 @@ Você merece mais. Mais liberdade. Mais tempo com quem importa. Mais autonomia. 
 - Ter liberdade na agenda para ficar mais tempo com a família
 - Ter presença online — construir sua autoridade além do boca a boca
 - Você pode criar seu próprio público com marketing ético e inteligente
-- Ser dono do seu próprio nicho e ter posicionamento claro — você é seu nicho: sua história, sua visão, seus valores
+- Ser dono do seu próprio nicho e ter posicionamento claro — sua história, visão e valores como médico formam seu diferencial
 - Criar fontes de receita além do atendimento clínico
 - Construir patrimônio com inteligência financeira
 - Viver feliz fazendo o que ama
@@ -235,7 +235,7 @@ Três canais + uma escada de produtos.
 
 A metodologia da Kura é organizada em 4 pilares. Cada pilar se divide em subcomponentes, aprofundados conforme o estilo e os objetivos do médico.
 
-1. **Mentalidade e Posicionamento** — Base que sustenta os outros três. De empregado para empresário: pensar no cliente, não em si. Na consulta o médico já faz isso; no negócio, a mesma lógica. Você é seu nicho: sua história como médico, sua visão, seus valores. Valor antes de venda. Foco no outro.
+1. **Mentalidade e Posicionamento** — Base que sustenta os outros três. De empregado para empresário: pensar no cliente, não em si. Na consulta o médico já faz isso; no negócio, a mesma lógica. Sua história, visão e valores como médico formam seu posicionamento. Valor antes de venda. Foco no outro.
 2. **Produtos e/ou Serviços** — A base da oferta. O que o médico está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online. Encontrar o market fit. O que você sabe vira produto e trabalha por você.
 3. **Conteúdo** — A forma como comunica o valor do produto. Instagram, YouTube, e-mail. Cada canal com seus passos e boas práticas.
 4. **Processo de Vendas** — As etapas para atrair, engajar e converter clientes. Funil que faz sentido pro médico.
@@ -308,7 +308,7 @@ Módulo de Aquisição de Pacientes — não vamos ensinar como operar Google Ad
 
 **Pilares da Formação (Módulos):** Seguem a estrutura da metodologia (Mentalidade e Posicionamento, Produtos e/ou Serviços, Conteúdo, Processo de Vendas).
 
-1. **Mentalidade e Posicionamento** — De empregado para empresário. Pensar no cliente, não em si. Na consulta o paciente chega com uma dor, você resolve; no negócio, a mesma lógica. Você é seu nicho: sua história como médico, sua visão, seus valores. Valor antes de venda. Foco no outro.
+1. **Mentalidade e Posicionamento** — De empregado para empresário. Pensar no cliente, não em si. Na consulta o paciente chega com uma dor, você resolve; no negócio, a mesma lógica. Sua história, visão e valores como médico formam seu posicionamento. Valor antes de venda. Foco no outro.
 2. **Produtos e/ou Serviços** — Posicionamento e nicho. O que oferecer (consultório, clínica, teleconsulta, curso). Encontrar o market fit. Precificação, finanças do negócio (PJ vs PF, tributação, fluxo de caixa). Operação e gestão. Relacionamento com pacientes. O que você sabe vira produto e trabalha por você. Tecnologia e automação como alavanca.
 3. **Conteúdo** — Como comunicar o valor. Marketing digital ético. Presença online, Instagram, YouTube, e-mail. O modelo, não o tutorial.
 4. **Processo de Vendas** — Aquisição de pacientes. Como funciona o funil. Do boca a boca ao digital, indicações, parcerias, SEO local. Atrair, engajar, converter.
@@ -514,7 +514,7 @@ No conteúdo gratuito, mostramos o caminho completo pra montar um negócio médi
 
 ## Pilares de Conteúdo
 
-1. **Mentalidade e Posicionamento** — Você é seu nicho. Foco no cliente, não em si. De empregado para empresário. Valor antes de venda. A tese central que sustenta tudo. (Pilar principal — é o que diferencia a Kura de tudo)
+1. **Mentalidade e Posicionamento** — Sua história, visão e valores formam seu posicionamento. Foco no cliente, não em si. De empregado para empresário. Valor antes de venda. A tese central que sustenta tudo. (Pilar principal — é o que diferencia a Kura de tudo)
 2. **O Jogo dos Negócios pra Médicos** — Como pensar como dono, montar e tocar o próprio negócio. Cases, modelos, caminhos.
 3. **Dinheiro & Médicos** — Finanças pessoais e empresariais (precificação, tributação PJ vs PF, fluxo de caixa, investimentos)
 4. **Posicionamento & Marketing Ético** — Como se destacar no mercado sem ferir o CFM. Marca pessoal, nicho, diferenciação
@@ -745,7 +745,7 @@ Já temos uma versão em construção com:
 
 Label: "Pilares". Title: "O que acreditamos."
 
-1. **Mentalidade e Posicionamento** — De empregado para empresário: pensar no cliente, não em si. Na consulta você já faz isso. No negócio, a mesma lógica. Você é seu nicho: sua história como médico, sua visão, seus valores. Valor antes de venda. Foco no outro. A base que sustenta os outros três.
+1. **Mentalidade e Posicionamento** — De empregado para empresário: pensar no cliente, não em si. Na consulta você já faz isso. No negócio, a mesma lógica. Sua história, visão e valores como médico formam seu posicionamento. Valor antes de venda. Foco no outro. A base que sustenta os outros três.
 
 2. **Produtos e/ou Serviços** — A base da sua oferta. O que você está vendendo. Consultório, clínica, teleconsulta, curso, mentoria, programa online. Encontrar o market fit. O que você sabe vira produto e trabalha por você.
 
