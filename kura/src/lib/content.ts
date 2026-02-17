@@ -52,9 +52,9 @@ export const problem = [
   "E o mercado não espera. Centenas de médicos fazendo a mesma coisa, na mesma cidade, disputando o mesmo paciente. Sem saber como se diferenciar. Sem saber nem por onde começar.",
   "Quando você tenta sair desse ciclo, as coisas complicam. Abre uma clínica: sociedade mal estruturada, precificação errada, ponto longe. A agenda continua não sendo sua. E o tempo vai embora no trânsito e em reuniões que não levam a nada.",
   "Aquela liberdade que você imaginou quando escolheu medicina? Praticar nos seus próprios termos, ser soberano na profissão? Ficou pra depois. Sempre pra depois. Te dizem que isso é normal. Que \"faz parte\". Que todo mundo passa por isso no começo.",
-  "Aí você abre o Instagram e vê aquele colega. Você sabe qual. Formou junto, ou até depois de você. Clinicamente, você sabe que é melhor. Estudou mais, viveu mais, atendeu mais. Mas ele tá lá: agenda cheia, consultando de casa, produzindo conteúdo, paciente vindo de tudo quanto é lugar.",
-  "Você olha aquele vídeo e pensa: eu faria isso muito melhor. E faria mesmo. Só que ele aprendeu uma coisa que ninguém te ensinou: como transformar competência clínica em negócio. Ele não é melhor médico. Ele entendeu o jogo antes de você.",
-  "E quando você procura ajuda pra sair dessa, só encontra coach genérico que nunca pisou num consultório e não entende suas dores. Ou médico charlatão que nunca construiu nada de verdade, mas tá bombando por conta da mídia. Nenhum dos dois tem o que você quer aprender. Ninguém te mostra o caminho de verdade.",
+  "Aí você abre o Instagram e vê aquele colega. Você sabe qual. Formou junto, ou até depois de você. Você estudou, viveu, atendeu. Mas ele tá lá: agenda cheia, consultando de casa, produzindo conteúdo, paciente vindo de tudo quanto é lugar.",
+  "Você olha aquele vídeo e pensa: eu faria isso. E faria. Só que ele aprendeu uma coisa que ninguém te ensinou: como transformar competência em negócio. A diferença? Ele entendeu o jogo antes de você.",
+  "E quando você procura ajuda pra sair dessa, só encontra coach genérico que nunca pisou num consultório e não entende suas dores. Ou ofertas que prometem tudo e não mostram o caminho. Nenhum dos dois tem o que você quer aprender. Ninguém te mostra o caminho de verdade.",
   "Não precisa ser assim. O caminho existe. Só ninguém te mostrou. A ideia é uma: o médico pode, e deve, ser dono do próprio negócio. É isso que muda tudo. É isso que liberta. A Kura te mostra como.",
 ];
 
