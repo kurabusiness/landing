@@ -23,7 +23,10 @@ export function Transformation() {
         {/* Stacked: mobile e viewports estreitos (ex: monitor vertical) */}
         <div className="block space-y-3 @6xl:hidden">
           {transformation.rows.map((row, i) => (
-            <div key={i} className="border border-border bg-bg p-4 sm:p-5">
+            <div
+              key={i}
+              className="border border-border-strong border-l-2 border-l-border-strong p-4 transition-all duration-200 hover:border-border hover:bg-surface-2/30 sm:p-5"
+            >
               <div className="mb-3">
                 <span className="mb-1 inline-block font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                   Antes
@@ -47,7 +50,7 @@ export function Transformation() {
         {/* Colunas lado a lado: apenas em containers largos */}
         <div className="hidden @6xl:block">
           <div className="grid grid-cols-2 gap-6 @6xl:gap-10">
-            <div className="min-w-0">
+            <div className="min-w-0 border border-border-strong border-l-2 border-l-border-strong p-5 transition-all duration-200 hover:border-border hover:bg-surface-2/30 @6xl:p-6">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                 Antes
               </h3>
@@ -59,7 +62,7 @@ export function Transformation() {
                 ))}
               </div>
             </div>
-            <div className="min-w-0 border-l border-border pl-6 @6xl:pl-10">
+            <div className="min-w-0 border border-border-strong border-l-2 border-l-border-strong p-5 transition-all duration-200 hover:border-border hover:bg-surface-2/30 @6xl:p-6">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-accent/60">
                 Depois
               </h3>

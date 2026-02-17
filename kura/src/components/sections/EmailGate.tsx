@@ -48,19 +48,26 @@ export function EmailGate() {
     <ScrollSection id="cta" className="flex min-h-dvh flex-col justify-center bg-bg pt-8 sm:pt-10 md:pt-16 pb-8 sm:pb-10 md:pb-12">
       <Container size="text" className="max-w-lg">
         <div className="text-center">
-          {!showSuccess && (
-            <span className="mb-4 inline-block font-mono text-[10px] font-medium uppercase tracking-[0.12em] text-tertiary">
-              {manifesto.emailLabel}
-            </span>
+          {showSuccess ? (
+            <h2
+              className="mt-4 mb-4 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
+              style={{ fontSize: "var(--text-display)" }}
+            >
+              <span className="headline-highlight">Você está dentro.</span>
+            </h2>
+          ) : (
+            <>
+              <h2
+                className="mb-2 font-heading font-bold leading-[1.15] tracking-[-0.03em]"
+                style={{ fontSize: "var(--text-display)" }}
+              >
+                <span className="headline-highlight">{manifesto.emailLabel}</span>
+              </h2>
+              <p className="mb-4 font-heading text-fg" style={{ fontSize: "var(--text-lead)" }}>
+                {ctaFinal.headline}
+              </p>
+            </>
           )}
-          <h2
-            className={`font-heading font-bold leading-[1.15] tracking-[-0.03em] ${showSuccess ? "mt-4" : ""} mb-4`}
-            style={{ fontSize: "var(--text-display)" }}
-          >
-            <span className="headline-highlight">
-              {showSuccess ? "Você está dentro." : ctaFinal.headline}
-            </span>
-          </h2>
           <p className="mx-auto mt-4 max-w-md leading-[1.6] text-muted" style={{ fontSize: "var(--text-body)" }}>
             {showSuccess
               ? "Obrigado por se cadastrar. Parabéns pela iniciativa, você deu o primeiro passo."
@@ -132,7 +139,7 @@ export function EmailGate() {
                 </ul>
               )}
 
-              <form onSubmit={handleSubmit} id="mc-embedded-subscribe-form" noValidate>
+              <form onSubmit={handleSubmit} id="mc-embedded-subscribe-form" noValidate className="border border-border-strong rounded-sm p-4 sm:p-5">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
                   <input
                     type="email"
@@ -141,7 +148,7 @@ export function EmailGate() {
                     required
                     disabled={status === "loading"}
                     placeholder={manifesto.emailPlaceholder}
-                    className="h-12 min-h-[48px] flex-1 border border-border/80 bg-bg px-5 text-[15px] text-fg placeholder:text-tertiary transition-colors focus:border-fg/30 focus:outline-none focus:ring-1 focus:ring-fg/20 disabled:opacity-60"
+                    className="h-12 min-h-[48px] flex-1 border border-border-strong bg-bg px-5 text-[15px] text-fg placeholder:text-tertiary transition-colors focus:border-fg/30 focus:outline-none focus:ring-1 focus:ring-fg/20 disabled:opacity-60"
                   />
                   <button
                     type="submit"

@@ -39,7 +39,7 @@ export const MANIFESTO_VIDEO_ID: string | null = null;
 
 // ─── Hero ───────────────────────────────────────────────────
 export const hero = {
-  headline: "Doc, você não precisa de mais um plantão, nem de achar um serviço melhor.",
+  headline: "Doc, você não precisa de mais um plantão, nem de encontrar um serviço melhor.",
   sub: "Você precisa criar o seu negócio.",
   detail: "Conquiste o controle da sua vida, pratique medicina nos seus próprios termos e tenha um negócio lucrativo.",
   cta: "Começar a jornada",
@@ -93,7 +93,7 @@ export const manifesto = {
 
 // ─── Pillars ────────────────────────────────────────────────
 export const pillars = {
-  label: "O que acreditamos",
+  label: "Pilares",
   title: "O\u00A0que acreditamos.",
   items: [
     {
