@@ -17,10 +17,10 @@ export const SITE = {
 // Description 150–160 chars para snippet ideal no Google
 export const SEO = {
   siteName: "Kura",
-  defaultTitle: "Kura | Negócios Para Médicos",
+  defaultTitle: "Kura | Negócios para médicos",
   defaultDescription:
-    "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina posicionamento, presença digital, produtos, marketing e automação. Leia o manifesto.",
-  ogDescription: "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina o caminho. Leia o manifesto.",
+    "Educação em negócios para médicos que querem viver nos próprios termos. O caminho pra liberdade e autonomia.",
+  ogDescription: "Educação em negócios para médicos que querem viver nos próprios termos. O caminho pra liberdade e autonomia.",
 } as const;
 
 // Nav links (section ids)
