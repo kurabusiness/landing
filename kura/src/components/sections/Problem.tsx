@@ -17,7 +17,7 @@ export function Problem() {
             className="mt-1 font-heading font-medium tracking-[-0.025em]"
             style={{ fontSize: "var(--text-title)" }}
           >
-            <span className="headline-highlight">A vida que você imaginou ficou pra depois?</span>
+            <span className="headline-highlight">Chegou a hora da virada.</span>
           </h2>
         </div>
 
