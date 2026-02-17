@@ -28,12 +28,12 @@
   --accent-glow-strong: rgba(248, 248, 248, 0.15);
   --accent-border: rgba(248, 248, 248, 0.20);
 
-  /* Fluid Typography — escala modular 1.2 */
-  --text-hero: clamp(2.25rem, 5vw + 1.25rem, 3.75rem);
-  --text-display: clamp(1.75rem, 3vw + 1rem, 2.25rem);
-  --text-title: clamp(1.25rem, 1.5vw + 0.75rem, 1.5rem);
-  --text-lead: clamp(1.0625rem, 0.5vw + 0.9rem, 1.125rem);
-  --text-body: clamp(0.9375rem, 0.25vw + 0.85rem, 1rem);
+  /* Fluid Typography — escala modular, responsiva mobile-first */
+  --text-hero: clamp(1.875rem, 4vw + 1.5rem, 3.75rem);
+  --text-display: clamp(1.5rem, 2.5vw + 1rem, 2.25rem);
+  --text-title: clamp(1.125rem, 1.25vw + 0.75rem, 1.5rem);
+  --text-lead: clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
+  --text-body: clamp(0.9375rem, 0.2vw + 0.875rem, 1rem);
 
   color-scheme: dark;
 }
@@ -66,7 +66,7 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: calc(3.5rem + env(safe-area-inset-top, 0px));
   -webkit-text-size-adjust: 100%;
 }
 
@@ -76,7 +76,7 @@ main.scroll-snap-container {
   overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y proximity;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: calc(3.5rem + env(safe-area-inset-top, 0px));
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
 }

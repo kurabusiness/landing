@@ -1,28 +1,37 @@
 import type { Metadata } from "next";
 import { geistSans, geistMono } from "@/lib/fonts";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE, SEO } from "@/lib/content";
 import "./globals.css";
 
+const siteUrl = SITE.url;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kura.com.br"),
-  title: "Kura | Negócios Para Médicos",
-  description:
-    "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina posicionamento, presença digital, produtos, marketing e automação. Leia o manifesto.",
+  metadataBase: new URL(siteUrl),
+  title: SEO.defaultTitle,
+  description: SEO.defaultDescription,
   keywords: [
     "negócio para médicos",
     "médico empreendedor",
     "marketing médico",
     "one person business médico",
     "empreendedorismo médico",
+    "curso para médicos",
+    "mentoria médico",
+    "negócio digital médico",
+    "CFM marketing",
   ],
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
-    title: "Kura | Negócios Para Médicos",
-    description:
-      "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina o caminho. Leia o manifesto.",
+    title: SEO.defaultTitle,
+    description: SEO.ogDescription,
     type: "website",
     locale: "pt_BR",
-    url: "https://kura.com.br",
-    siteName: "Kura",
+    url: siteUrl,
+    siteName: SEO.siteName,
     images: [
       {
         url: "/og-image.jpg",
@@ -34,10 +43,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kura | Negócios Para Médicos",
-    description:
-      "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina o caminho. Leia o manifesto.",
+    title: SEO.defaultTitle,
+    description: SEO.ogDescription,
     images: ["/og-image.jpg"],
+    ...(SITE.twitterHandle && { creator: SITE.twitterHandle }),
   },
   robots: {
     index: true,
@@ -59,6 +68,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+        <JsonLd />
         <SmoothScroll>
           {children}
         </SmoothScroll>

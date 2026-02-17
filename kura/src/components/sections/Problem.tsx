@@ -8,7 +8,7 @@ import { problem } from "@/lib/content";
 export function Problem() {
   return (
     <ScrollSection id="problem" className="flex h-dvh min-h-0 flex-col overflow-hidden bg-bg pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
-      <Container size="grid" className="flex min-h-0 flex-1 flex-col gap-3 py-4 md:gap-4 md:py-6">
+      <Container size="grid" className="flex min-h-0 flex-1 flex-col gap-3 py-5 sm:py-6 md:gap-4 md:py-8">
         <div className="shrink-0">
           <span className="font-mono text-[10px] font-medium uppercase tracking-[0.04em] text-muted">
             A realidade
@@ -22,8 +22,8 @@ export function Problem() {
         </div>
 
         <div
-          className="min-h-0 flex-1 overflow-y-auto overscroll-y-auto md:columns-2 md:gap-x-10 [&>p]:mb-3 [&>p]:last:mb-0"
-          style={{ WebkitOverflowScrolling: "touch", paddingBottom: "max(2rem, env(safe-area-inset-bottom, 0px))" }}
+          className="min-h-0 flex-1 overflow-y-auto overscroll-y-auto md:columns-2 md:gap-x-8 lg:gap-x-10 [&>p]:mb-3 [&>p]:last:mb-0"
+          style={{ WebkitOverflowScrolling: "touch", paddingBottom: "max(1.5rem, env(safe-area-inset-bottom, 0px))" }}
         >
           {problem.slice(0, 7).map((statement, i) => (
             <p
@@ -38,7 +38,7 @@ export function Problem() {
               {problem[8]}
             </p>
           </div>
-          <div className="mt-8 flex w-full justify-center [column-span:all] md:mt-10">
+          <div className="mt-6 flex w-full justify-center [column-span:all] sm:mt-8 md:mt-10">
             <ScrollHint />
           </div>
         </div>

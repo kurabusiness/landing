@@ -19,8 +19,8 @@ export function Footer() {
 
   return (
     <footer className="fixed bottom-0 left-0 right-0 z-40 border-t border-border/40 bg-bg/95 backdrop-blur-md pb-[env(safe-area-inset-bottom,0px)]">
-      <div className="mx-auto max-w-6xl px-4 sm:px-5 md:px-8 lg:px-12 py-4 md:py-5 min-w-0">
-        <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-4 sm:py-5 min-w-0">
+          <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:items-center sm:text-left">
           <div className="flex flex-col items-center gap-1 sm:flex-row sm:items-center sm:gap-3 min-w-0 max-w-full">
             <Logo />
             <p className="font-mono text-[11px] text-tertiary max-w-[280px] sm:max-w-none leading-relaxed">

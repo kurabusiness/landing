@@ -22,7 +22,7 @@ export function JourneyIndicator() {
 
   return (
     <div
-      className="fixed right-5 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-2 md:flex"
+      className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-2 sm:right-5 lg:flex"
       aria-label="Progresso na jornada"
     >
       {SECTIONS.map((id, i) => (

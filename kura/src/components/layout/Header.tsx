@@ -14,7 +14,7 @@ export function Header() {
       className="fixed top-0 left-0 right-0 z-50 bg-bg/95 backdrop-blur-md border-b border-border/40"
       style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
     >
-      <div className="mx-auto flex h-14 md:h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-5 md:px-8 lg:px-12 min-w-0">
+      <div className="mx-auto flex h-14 md:h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 min-w-0">
         <Logo />
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -88,7 +88,10 @@ export function Header() {
 
       {/* Mobile nav dropdown */}
       {mobileOpen && (
-        <div className="absolute left-0 right-0 top-14 md:top-16 bottom-0 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto max-h-[calc(100dvh-3.5rem)]">
+        <div
+          className="absolute left-0 right-0 top-14 md:top-16 bg-bg/98 backdrop-blur-md border-t border-border/40 md:hidden overflow-y-auto"
+          style={{ maxHeight: "calc(100dvh - 3.5rem - env(safe-area-inset-top, 0px))" }}
+        >
           <nav className="flex flex-col py-2">
             {navLinks.map((link) => (
               <a

@@ -10,6 +10,17 @@ export const SITE = {
   youtube: process.env.NEXT_PUBLIC_YOUTUBE_URL ?? "",
   youtubeHandle: process.env.NEXT_PUBLIC_YOUTUBE_HANDLE ?? "YouTube",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "",
+  twitterHandle: process.env.NEXT_PUBLIC_TWITTER_HANDLE ?? "",
+} as const;
+
+// ─── SEO (reuso em metadata, JsonLD, etc.) ──────────────────
+// Description 150–160 chars para snippet ideal no Google
+export const SEO = {
+  siteName: "Kura",
+  defaultTitle: "Kura | Negócios Para Médicos",
+  defaultDescription:
+    "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina posicionamento, presença digital, produtos, marketing e automação. Leia o manifesto.",
+  ogDescription: "Educação em negócios para médicos que querem viver nos próprios termos. A Kura ensina o caminho. Leia o manifesto.",
 } as const;
 
 // Nav links (section ids)

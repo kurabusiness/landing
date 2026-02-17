@@ -45,7 +45,7 @@ export function EmailGate() {
   const showSuccess = status === "success";
 
   return (
-    <ScrollSection id="cta" className="bg-bg pt-8 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pt-16 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
+    <ScrollSection id="cta" className="flex min-h-dvh flex-col justify-center bg-bg pt-8 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:pt-10 md:pt-16 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <Container size="text" className="max-w-lg">
         <div className="text-center">
           {!showSuccess && (
@@ -66,7 +66,7 @@ export function EmailGate() {
           </p>
         </div>
 
-        <div className="mx-auto mt-10 max-w-md md:mt-12">
+        <div className="mx-auto mt-8 max-w-md sm:mt-10 md:mt-12">
           {showSuccess ? (
             <div className="flex flex-col items-center gap-8">
               <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent/5">
@@ -164,7 +164,7 @@ export function EmailGate() {
           )}
         </div>
 
-        <div className="mt-12 flex flex-col items-center gap-4 pt-8 md:mt-16 md:gap-5 md:pt-10">
+        <div className="mt-10 flex flex-col items-center gap-4 pt-6 sm:mt-12 sm:pt-8 md:mt-16 md:gap-5 md:pt-10">
           <button
             type="button"
             onClick={() => {

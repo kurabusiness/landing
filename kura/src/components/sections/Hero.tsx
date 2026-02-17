@@ -7,7 +7,10 @@ import { hero } from "@/lib/content";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative flex min-h-screen min-h-dvh flex-col items-start justify-center overflow-hidden snap-start snap-always scroll-mt-14 md:scroll-mt-16 pt-14 pb-6 md:pt-16 md:pb-8">
+    <section
+      id="hero"
+      className="relative flex min-h-screen min-h-dvh flex-col items-start justify-center overflow-hidden snap-start snap-always scroll-mt-[calc(3.5rem+env(safe-area-inset-top,0px))] md:scroll-mt-16 pt-[calc(3.5rem+env(safe-area-inset-top,0px))] pb-8 sm:pt-16 sm:pb-10 md:pt-20 md:pb-12"
+    >
       <div
         className="pointer-events-none absolute -top-[20%] left-1/2 h-[60vw] max-h-[800px] w-[60vw] max-w-[800px] -translate-x-1/2"
         style={{
@@ -30,11 +33,11 @@ export function Hero() {
           {hero.sub}
         </p>
 
-        <p className="mt-5 max-w-lg leading-[1.6] text-muted" style={{ fontSize: "var(--text-lead)" }}>
+        <p className="mt-4 sm:mt-5 max-w-lg leading-[1.6] text-muted" style={{ fontSize: "var(--text-lead)" }}>
           {hero.detail}
         </p>
 
-        <div className="mt-8">
+        <div className="mt-6 sm:mt-8">
           <button
             type="button"
             onClick={() => scrollToSection("problem")}

@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Footer } from "@/components/layout/Footer";
 import { Logo } from "@/components/ui/Logo";
 import { SITE } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Obrigado | Kura",
+  description: "Você está dentro. Confira o email.",
+  robots: { index: false, follow: true },
+  alternates: {
+    canonical: `${SITE.url.replace(/\/$/, "")}/obrigado`,
+  },
+};
 
 export default function ObrigadoPage() {
   return (

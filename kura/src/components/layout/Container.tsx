@@ -6,9 +6,9 @@ interface ContainerProps {
 }
 
 const sizes = {
-  text: "max-w-2xl sm:max-w-3xl lg:max-w-4xl",
-  grid: "max-w-2xl sm:max-w-3xl lg:max-w-5xl",
-  full: "max-w-2xl sm:max-w-3xl lg:max-w-4xl",
+  text: "max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl",
+  grid: "max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-5xl",
+  full: "max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl",
 };
 
 export function Container({
@@ -18,7 +18,7 @@ export function Container({
   as: Tag = "div",
 }: ContainerProps) {
   return (
-    <Tag className={`mx-auto w-full min-w-0 px-4 sm:px-5 md:px-8 lg:px-12 ${sizes[size]} ${className}`}>
+    <Tag className={`mx-auto w-full min-w-0 px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 ${sizes[size]} ${className}`}>
       {children}
     </Tag>
   );

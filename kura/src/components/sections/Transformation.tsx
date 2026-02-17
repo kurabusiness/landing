@@ -9,9 +9,9 @@ export function Transformation() {
   const scrollToCta = () => scrollToSection("cta");
 
   return (
-    <ScrollSection id="diferencial" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
+    <ScrollSection id="diferencial" className="overflow-y-auto bg-bg pt-6 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] sm:pt-8 md:pt-12 md:pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <Container size="grid">
-        <div className="mb-5 md:mb-6">
+        <div className="mb-4 sm:mb-5 md:mb-6">
           <h2
             className="font-heading font-bold tracking-[-0.025em] text-fg"
             style={{ fontSize: "var(--text-display)" }}
@@ -20,10 +20,10 @@ export function Transformation() {
           </h2>
         </div>
 
-        {/* Mobile */}
-        <div className="block space-y-3 md:hidden">
+        {/* Mobile / narrow */}
+        <div className="block space-y-3 sm:hidden">
           {transformation.rows.map((row, i) => (
-            <div key={i} className="border border-border bg-bg p-4">
+            <div key={i} className="border border-border bg-bg p-4 sm:p-5">
               <div className="mb-3">
                 <span className="mb-1 inline-block font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                   Antes
@@ -44,9 +44,9 @@ export function Transformation() {
           ))}
         </div>
 
-        {/* Desktop */}
-        <div className="hidden md:block">
-          <div className="grid grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+        {/* Desktop / tablet portrait+ */}
+        <div className="hidden sm:block">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
             <div className="min-w-0">
               <h3 className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.04em] text-tertiary">
                 Antes
@@ -77,7 +77,7 @@ export function Transformation() {
         <button
           type="button"
           onClick={scrollToCta}
-          className="mt-8 inline-flex h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation md:mt-10"
+          className="mt-6 inline-flex h-12 min-h-[48px] items-center gap-2 bg-accent px-7 text-sm font-semibold text-accent-fg transition-all hover:bg-accent-hover active:scale-[0.98] touch-manipulation sm:mt-8 md:mt-10"
         >
           Dê o primeiro passo
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
