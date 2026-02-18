@@ -161,12 +161,22 @@ export const about = {
 };
 
 // ─── FAQ ────────────────────────────────────────────────────
-// Cobre os principais pontos do BP sem revelar a estratégia (escada, preços, produtos futuros).
+// Ordem em storytelling: quem somos → por que existe → o que não é → objeções → valor → decisão.
 export const faq = [
   {
-    question: "Isso é gratuito mesmo?",
+    question: "O que é a Kura?",
     answer:
-      "Sim. O conteúdo por email é gratuito. A Kura está construindo um movimento de médicos que querem construir seu negócio. Quem entra agora participa do início.",
+      "Educação em negócios feita pra médicos. O médico que quer ser médico, ganhar com o que sabe. Consultório, curso, mentoria. A Kura mostra o caminho: posicionamento, presença digital, produtos e gestão. O que a faculdade não ensinou.",
+  },
+  {
+    question: "A faculdade não me ensinou isso.",
+    answer:
+      "Exatamente. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. O básico pra você não ser passado pra trás. A Kura ensina o que faltou.",
+  },
+  {
+    question: "Quais são os pilares?",
+    answer:
+      "Mentalidade e Posicionamento, Produtos e/ou Serviços, Conteúdo e Processo de Vendas. Quatro pilares que sustentam qualquer negócio. A Kura ensina cada um com a realidade do médico em mente.",
   },
   {
     question: "Isso é curso de guru?",
@@ -179,11 +189,6 @@ export const faq = [
       "Pode. A Resolução 2.336/2023 liberou. Todo conteúdo da Kura respeita e ensina dentro da legalidade. Marketing ético é um dos pilares.",
   },
   {
-    question: "O que eu vou receber?",
-    answer:
-      "Conteúdo por email. Quem entra agora participa do início. O que vier, você recebe primeiro. Sem compromisso de frequência.",
-  },
-  {
     question: "Preciso de produto digital pra começar?",
     answer:
       "Não. Você começa se posicionando e construindo presença. Consultório, clínica, teleconsulta, curso, mentoria. O formato depende de você. O método mostra o caminho.",
@@ -194,14 +199,14 @@ export const faq = [
       "O conteúdo vem pra você. Comece pelo que faz sentido. O caminho é gradual, não aposta. Posicionamento e presença primeiro. O resto quando fizer sentido.",
   },
   {
-    question: "A faculdade não me ensinou isso.",
+    question: "O que eu vou receber?",
     answer:
-      "Exatamente. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. O básico pra você não ser passado pra trás. A Kura ensina o que faltou.",
+      "Conteúdo por email. Quem entra agora participa do início. O que vier, você recebe primeiro. Sem compromisso de frequência.",
   },
   {
-    question: "O que é a Kura?",
+    question: "Isso é gratuito mesmo?",
     answer:
-      "Educação em negócios feita pra médicos. O médico que quer ser médico, ganhar com o que sabe. Consultório, curso, mentoria. A Kura mostra o caminho: posicionamento, presença digital, produtos e gestão. O que a faculdade não ensinou.",
+      "Sim. O conteúdo por email é gratuito. A Kura está construindo um movimento de médicos que querem construir seu negócio. Quem entra agora participa do início.",
   },
 ];
 
