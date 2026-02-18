@@ -64,7 +64,7 @@ export const problem = [
 export const manifesto = {
   label: "O Manifesto",
   opening: "Você merece mais.",
-  openingBody: "Mais do que plantão. Mais do que trocar hora por dinheiro. Mais do que depender de estrutura que não é sua. Você escolheu medicina pra ter autonomia. Essa vida existe. Ela vem de construir seu negócio.",
+  openingBody: "Mais do que plantão. Mais do que depender de escolhas que não são suas. Você escolheu medicina pra ter autonomia. Essa vida existe. Ela vem de construir seu negócio.",
   emailLabel: "Faça parte",
   emailCta: "Quero fazer parte",
   emailCtaLoading: "Entrando...",
@@ -74,7 +74,7 @@ export const manifesto = {
   sections: [
     {
       declaration: "Plantão tem teto. Negócio não.",
-      body: "Plantão paga por hora. Você para, a renda para. Seu negócio paga pelo que você sabe e construiu. Pela operação que roda sem você. É outro jogo. Ninguém te ensinou a jogar.",
+      body: "Sua consulta é seu produto de maior ticket. O limite: só fatura quando você está bem e presente. Seu negócio paga pelo que você sabe e construiu. Pela operação que roda sem você estar lá. É outro jogo. Ninguém te ensinou a jogar.",
     },
     {
       declaration: "Medicina nos seus termos.",
@@ -129,7 +129,7 @@ export const transformation = {
       with: "Posicionamento claro. Uma marca que as pessoas reconhecem e em quem confiam.",
     },
     {
-      without: "Plantão atrás de plantão. Quando você para, a renda para.",
+      without: "Só plantão. Sem teto.",
       with: "Renda que escala. Seu conhecimento vira produto e trabalha por você.",
     },
     {
@@ -137,7 +137,7 @@ export const transformation = {
       with: "Presença digital que atrai. Audiência que cresce com o tempo.",
     },
     {
-      without: "Conhecimento preso na consulta. Uma hora, um paciente.",
+      without: "Conhecimento preso. Uma hora, um paciente.",
       with: "Conhecimento empacotado. Um produto, muitos clientes.",
     },
     {
