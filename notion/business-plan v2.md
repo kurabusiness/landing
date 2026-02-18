@@ -30,13 +30,15 @@ O produto da Kura precisa ser uma **tese de vida** — como o One Person Busines
 
 **A tese da Kura:** O médico merece uma vida melhor — e criar o próprio negócio é a solução. Não é uma das opções. É A solução. Com visão de negócio e as ferramentas certas, ele monta uma operação que funciona pra ele (e não o contrário). Criar o negócio é o que liberta. É o que dá liberdade, tempo, autonomia financeira e controle.
 
+**O médico que quer ser médico.** Ganhar com o que sabe. Consultório, curso, mentoria, infoproduto. Sem depender de plantão. A Kura ajuda a montar o negócio dele.
+
 **O despertar:** "Doc, você não precisa de mais um plantão. Está na hora de ser dono do seu negócio."
 
 **Implicações para os produtos:**
 
 - O conteúdo gratuito (Produto 1) planta a ideia na cabeça do médico. Cada post, vídeo e ebook tem que bater na mesma tecla: existe um caminho melhor, e ele passa por montar seu próprio negócio
-- O produto de entrada (Produto 2) abre a cabeça — mostra o jogo completo, os pilares, os caminhos. O médico pensa "que legal, quero isso" mas não sabe como executar
-- O curso de implementação (Produto 3 — DIY) não ensina "como usar ferramenta X" — ensina o jogo dos negócios com exemplos concretos da medicina. Ele sai com visão estratégica completa. Para quem quiser executar sozinho, aulas bônus com especialistas contratados entregam os tutoriais técnicos — mas mesmo com as aulas bônus, executar tudo sozinho é difícil
+- O produto de entrada (Produto 2) abre a cabeça e dá o básico. O médico não quer MBA. Quer o básico pra não ser enganado. Ter noção do que tá fazendo. O Produto 2 mostra o jogo completo, os pilares, os caminhos. Pra ele não ser passado pra trás
+- O curso de implementação (Produto 3 — DIY) não ensina "como usar ferramenta X" — ensina o jogo dos negócios com exemplos concretos da medicina. O essencial, não tutorial infinito. Ele sai com visão estratégica completa. Para quem quiser executar sozinho, aulas bônus com especialistas contratados entregam os tutoriais técnicos — mas mesmo com as aulas bônus, executar tudo sozinho é difícil
 - A mentoria (Produto 4 — DWY) vende acompanhamento real: "nunca mais tome decisões de negócio sozinho". Fazer junto, validar, acelerar. Pode incluir comunidade, networking curado e formações presenciais conforme a demanda evoluir
 - O SaaS (DFY) é a ferramenta que faz por ele — automação da operação que ele aprendeu a construir
 - O produto resolve a vida do médico, não um problema técnico
@@ -49,6 +51,7 @@ O produto da Kura precisa ser uma **tese de vida** — como o One Person Busines
 
 **O que SOMOS:**
 
+- Ajudar o médico a ser médico. Ensinar o que ele precisa pra exercer medicina sem se preocupar com gestão
 - A educação em negócios que o médico brasileiro precisava — feita por quem entende medicina e negócios
 - A tese de que o médico precisa ser dono do próprio negócio pra ter liberdade, tempo, autonomia e controle
 - O método pra fazer isso acontecer, com clareza de caminho e as ferramentas certas na hora certa
@@ -58,9 +61,9 @@ O produto da Kura precisa ser uma **tese de vida** — como o One Person Busines
 
 Isso aqui não é funil de vendas. É o caminho que leva o médico de "tô preso no plantão" até "tenho meu negócio e a vida que eu quero".
 
-### Fase 1: Criar o Problema na Cabeça Dele
+### Fase 1: Expor a realidade
 
-Conteúdo, conteúdo, conteúdo. O médico hoje vive preso a uma rotina que não escolheu — plantões interminaveis, estruturas que não valorizam seu trabalho, sem controle sobre a própria agenda. Ele ainda não sabe que tem um problema — acha que é só "a vida de médico". Nosso conteúdo faz ele olhar pra própria rotina e pensar: "cara, não precisa ser assim".
+Não é criar o problema. É expor o que já existe. Convênios pagam menos. Plantão paga menos. Se não for dono do negócio, essa é a realidade. Conteúdo, conteúdo, conteúdo. O médico hoje vive preso a uma rotina que não escolheu — plantões interminaveis, estruturas que não valorizam seu trabalho, sem controle sobre a própria agenda. Sua consulta é seu produto de maior ticket, mas ele só fatura quando está bem e presente. Ele ainda não sabe que tem um problema — acha que é só "a vida de médico". Nosso conteúdo faz ele olhar pra própria rotina e pensar: "cara, não precisa ser assim".
 
 ### Fase 2: Apresentar a Tese
 
@@ -113,7 +116,7 @@ Você merece mais. Mais liberdade. Mais tempo com quem importa. Mais autonomia. 
 - Ter presença online — construir sua autoridade além do boca a boca
 - Você pode criar seu próprio público com marketing ético e inteligente
 - Ser dono do seu próprio nicho e ter posicionamento claro — sua história, visão e valores como médico formam seu diferencial
-- Criar fontes de receita além do atendimento clínico
+- Criar fontes de receita além do atendimento clínico — e que não dependam de você estar presente e bem para faturar
 - Construir patrimônio com inteligência financeira
 - Viver feliz fazendo o que ama
 - Ter sucesso e ser dono das próprias escolhas
@@ -161,7 +164,7 @@ A estratégia da Kura mistura pedaços de 4 modelos que já geraram centenas de 
 
 ### 1. Empiricus — "O Fim do Brasil" (Tese Provocativa + Copywriting)
 
-A Empiricus foi de quase falência a R$ 200M+/ano com uma única tese: achar uma verdade incômoda que ninguém falava, jogar na cara e se posicionar como quem resolve. No caso da Kura, a verdade incômoda é: "a formação médica te preparou clinicamente, mas ninguém te ensinou a construir um negócio — e sem isso, você fica dependente de quem te contrata."
+A Empiricus foi de quase falência a R$ 200M+/ano com uma única tese: achar uma verdade incômoda que ninguém falava, jogar na cara e se posicionar como quem resolve. No caso da Kura, a verdade incômoda é: "sua consulta é seu produto de maior ticket, mas você só fatura quando está bem e presente — e ninguém te ensinou a construir um negócio que trabalha por você."
 
 **O que pegamos:** Primeiro mostra o problema, depois apresenta a solução. O conteúdo carrega a tese, não o produto.
 
@@ -211,13 +214,14 @@ Graduado em Administração pela FGV-SP. Gestor de Fundos de Investimento com ma
 
 O Brasil forma cerca de 40 mil médicos por ano, mas as vagas de residência médica não acompanham. Milhares de recém-formados optam por pós-graduações lato sensu em áreas de alto crescimento (medicina integrativa, wellness, estética, longevidade — vide a tração do movimento Outlive/Peter Attia). Esses médicos precisam aprender a se posicionar e montar negócio pra não ficar pra trás.
 
-O problema não é só clínico — é existencial. O médico que não criar o próprio negócio vai continuar preso ao plantão, sem tempo, sem autonomia financeira, sem controle, sem a vida que imaginou quando entrou na faculdade. A solução é criar o negócio. É assim que ele conquista liberdade, tempo, autonomia financeira e o controle da própria vida.
+O problema não é só clínico — é existencial. Sua consulta é seu produto de maior ticket. O limite: só fatura quando você está bem e presente. O médico que não criar o próprio negócio vai continuar preso a esse teto — sem tempo, sem autonomia financeira, sem controle, sem a vida que imaginou quando entrou na faculdade. A solução é criar o negócio. É assim que ele conquista liberdade, tempo, autonomia financeira e o controle da própria vida.
 
 ## Dores Específicas
 
 - **Mercado saturado sem diferenciação:** Muitos médicos competindo pelo mesmo paciente, sem saber como se posicionar ou criar uma marca pessoal ética.
 - **Formação zero em negócios:** A graduação em medicina não ensina gestão, finanças, marketing ou liderança.
 - **Dependência do plantão:** Muitos médicos dependem exclusivamente de plantões por não terem uma alternativa estruturada de receita — o que limita autonomia e qualidade de vida.
+- **Consulta como teto:** Sua consulta é seu produto de maior ticket, mas você só fatura quando está bem e presente fisicamente. Doença, burnout, férias, família — qualquer ausência corta a renda. O negócio que escala é o que trabalha por você.
 - **Tempo escasso:** Rotina intensa não permite programas longos ou genéricos (MBA, pós em gestão).
 - **Decisões financeiras ruins:** Abertura de clínicas sem planejamento, sociedades mal estruturadas, precificação errada.
 - **Desconhecimento de ferramentas:** IA, automação, telemedicina e outras ferramentas que poderiam facilitar muito a vida deles são ignoradas porque ninguém ensinou como encaixar no negócio.
@@ -281,7 +285,7 @@ Ensina o básico de negócios pra médicos, com curadoria de ferramentas (inclui
 > ⚠️ Será o primeiro produto pago. Desenvolvido em paralelo, lançado quando a audiência estiver aquecida.
 > 
 
-Produto barato (R$ 97–297) que abre a cabeça do médico para o conceito de One Person Business adaptado à medicina. Fala a língua dele. Mostra a tese completa, os pilares, os caminhos possíveis.
+Produto barato (R$ 97–297) que abre a cabeça do médico para o conceito de One Person Business adaptado à medicina. O médico não quer MBA. Quer o básico pra não ser enganado. Ter noção do que tá fazendo. O Produto 2 abre a cabeça e dá isso. Pra ele não ser passado pra trás. Fala a língua dele. Mostra a tese completa, os pilares, os caminhos possíveis.
 
 - **Formato:** Ebook premium, mini-curso de 1-2h, workshop gravado
 - **Objetivo:** Fazer ele pagar pela primeira vez. Gera o "aha moment" mas também o gap — ele entende o que precisa fazer, mas não consegue fazer sozinho. Aí ele vai querer o Produto 3
@@ -296,7 +300,7 @@ Produto barato (R$ 97–297) que abre a cabeça do médico para o conceito de On
 
 **Filosofia: Ensinar o jogo, não a ferramenta.**
 
-O Produto 3 não é um curso técnico com tutoriais de como fazer planilha ou configurar sistema. Médico não quer perder tempo com isso. O Produto 3 é uma **formação completa em negócios** — um Personal MBA para médicos — que ensina como o jogo funciona, com exemplos concretos da realidade médica.
+O Produto 3 não é um curso técnico com tutoriais de como fazer planilha ou configurar sistema. Médico não quer perder tempo com isso. O Produto 3 é uma **formação completa em negócios** — um Personal MBA para médicos — que ensina como o jogo funciona, com exemplos concretos da realidade médica. O essencial, não tutorial infinito.
 
 O médico sai sabendo como funciona aquisição de paciente, posicionamento, preço, gestão, marketing — visão do jogo, não tutorial. Ferramentas aparecem como exemplo ao longo dos módulos ("existe isso, funciona assim, serve pra isso"), nunca como passo-a-passo.
 
@@ -392,6 +396,7 @@ Se rolar demanda, dá pra montar uma agência que implementa direto pro médico 
 - **Modelo:** Comunidade + sessões clínicas presenciais (SP e RJ) + plataforma de conteúdo
 - **Diferencial:** Sistema de classificação R1-R5 por maturidade empreendedora, uso da metáfora médica (residência em negócios)
 - **Fraqueza:** Posicionamento visual e branding tradicionais, abordagem broad demais (inclui não-médicos)
+- **Diferenciação Kura:** O médico não quer montar empresa corporativa. Quer negócio nos seus termos. Consultório, curso, mentoria. One person business.
 
 ## G4 Educação
 
@@ -430,7 +435,7 @@ Se rolar demanda, dá pra montar uma agência que implementa direto pro médico 
 
 ## Tese de Mercado
 
-O Brasil forma ~40 mil médicos/ano. As vagas de residência não acompanham. Uma massa crescente opta por pós-graduações (wellness, estética, longevidade, medicina integrativa) e precisa construir negócios para se destacar. Nosso ICP vive nessa intersecção: médico que precisa empreender para não ficar preso ao plantão.
+O Brasil forma ~40 mil médicos/ano. As vagas de residência não acompanham. Uma massa crescente opta por pós-graduações (wellness, estética, longevidade, medicina integrativa) e precisa construir negócios para se destacar. O especialista sai da residência, vai pro hospital ou centro médico, quer abrir consultório ou montar negócio. Focou anos só na medicina. Zero em gestão. Ticket maior que generalista. Nosso ICP vive nessa intersecção: médico que precisa empreender para não ficar preso ao plantão.
 
 ## Persona Primária: Médico(a) recém-formado ou em pós-graduação
 
@@ -438,7 +443,7 @@ O Brasil forma ~40 mil médicos/ano. As vagas de residência não acompanham. Um
 - Recém-saiu da faculdade ou está em pós-graduação lato sensu (wellness, estética, longevidade, integrativa)
 - Não conseguiu residência ou optou por não fazer
 - Precisa se posicionar no mercado e construir um negócio próprio para se destacar
-- Quer se libertar da dependência de plantões
+- Quer se libertar da dependência de plantões — sabe que a consulta é seu produto de maior ticket, mas só fatura quando está bem e presente
 - Digital native, consome muito conteúdo online, aberto a aprender sobre negócios e novas ferramentas
 - Não tem capital grande, mas tem tempo para aprender
 - Busca clareza: "como eu monto meu negócio e por onde começo?"
@@ -452,8 +457,17 @@ O Brasil forma ~40 mil médicos/ano. As vagas de residência não acompanham. Um
 - Não tem tempo para MBA ou programas longos
 - Precisa de soluções práticas, não teoria
 
-## O que une os dois perfis
+## Persona Especialista: Médico(a) especialista querendo sair do hospital
 
+- 30-45 anos, residência concluída
+- Preso em hospital ou centro médico
+- Quer consultório próprio ou negócio (curso, mentoria)
+- Focou anos só na medicina. Zero em gestão
+- Ticket maior que generalista a longo prazo
+
+## O que une os perfis
+
+- Médico que quer ser médico. Ganhar com o que sabe. Sem virar gestor de tempo integral
 - Formação médica sem qualquer base em negócios
 - Querem autonomia profissional e financeira
 - Cansados de conteúdo genérico de "empreendedorismo" que não fala a língua deles
@@ -515,11 +529,11 @@ No conteúdo gratuito, mostramos o caminho completo pra montar um negócio médi
 ## Pilares de Conteúdo
 
 1. **Mentalidade e Posicionamento** — Sua história, visão e valores formam seu posicionamento. Foco no cliente, não em si. De empregado para empresário. Valor antes de venda. A tese central que sustenta tudo. (Pilar principal — é o que diferencia a Kura de tudo)
-2. **O Jogo dos Negócios pra Médicos** — Como pensar como dono, montar e tocar o próprio negócio. Cases, modelos, caminhos.
+2. **O Jogo dos Negócios pra Médicos** — Como pensar como dono, montar e tocar o próprio negócio. Formas de ganhar: consultório é um caminho; curso, mentoria, infoproduto são outros. Exemplos: vacinação no consultório de pediatria, fisio no de ortopedia. Cases, modelos, caminhos.
 3. **Dinheiro & Médicos** — Finanças pessoais e empresariais (precificação, tributação PJ vs PF, fluxo de caixa, investimentos)
 4. **Posicionamento & Marketing Ético** — Como se destacar no mercado sem ferir o CFM. Marca pessoal, nicho, diferenciação
 5. **Gestão de Consultório/Clínica** — Operação, processos, equipe, indicadores
-6. **Liberdade do Plantão** — Histórias reais de médicos que construíram negócios próprios, erros comuns, rotas alternativas (incluindo telemedicina)
+6. **Liberdade do Plantão** — Sua consulta é seu produto de maior ticket; o problema é só faturar quando você está bem e presente. Formas de ganhar além da consulta (vacinação, fisio, pilates no consultório). Histórias reais de médicos que construíram negócios próprios, erros comuns, rotas alternativas (incluindo telemedicina)
 7. **Ferramentas & Tecnologia** — Curadoria de IA, automação, gestão, produtividade, telemedicina. O que existe, pra que serve, por que usar. Sempre como meio, nunca como fim
 
 ## Canais e Cadência
@@ -648,6 +662,7 @@ Já temos uma versão em construção com:
 
 - Headline: "Doc, você não precisa de mais um plantão."
 - Sub: "Está na hora de ser dono do seu negócio."
+- Detail: "Praticar medicina nos seus termos. Ganhar com o que você sabe. Consultório, curso, mentoria. A Kura mostra o caminho."
 - CTA: "Começar a jornada"
 
 ## Seção "A realidade" (Problema) — Despertar de Consciência
@@ -735,11 +750,32 @@ Já temos uma versão em construção com:
 
 **Notas de copy:**
 
+- Expor a realidade, não criar o problema. Convênios pagam menos, plantão paga menos. É o que existe
+- Médico que quer ser médico. Ganhar com o que sabe. Negócio amplo: consultório, curso, mentoria, infoproduto
 - Tom: conversa direta, sem melodrama, sem vitimismo. Ele se sente visto, não atacado
 - Ritmo: frases curtas que puxam pra próxima. Parágrafos curtos. Scroll natural
-- CFM-safe: não ataca plantão, não fala "mal remunerado", não promete dinheiro. Fala de autonomia, tempo, controle
+- CFM-safe: não ataca plantão, não fala "mal remunerado", não promete dinheiro. Fala de autonomia, tempo, controle. Crítica sutil: foco em falta de teto e dependência, não em vilificar consultas
 - A transição pro manifesto vem logo depois — "Existe outro caminho" é a ponte
 - O CTA final do site (email + IG) vem só no final, depois de Manifesto e Prova. Essa seção só precisa fazer ele continuar lendo
+
+## Manifesto (Landing)
+
+**Opening:** "Você merece mais."
+
+**Opening body:** "Mais do que plantão. Mais do que depender de escolhas que não são suas. Você quer ser médico. Ganhar com o que sabe. Essa vida existe. Ela vem de construir seu negócio."
+
+**Seções:**
+- Plantão tem teto. Negócio não. — Sua consulta é seu produto de maior ticket. O limite: só fatura quando você está bem e presente. Seu negócio paga pelo que você sabe e construiu. Pela operação que roda sem você estar lá. É outro jogo. Ninguém te ensinou a jogar.
+- Medicina nos seus termos. — Seus pacientes. Sua agenda. Quanto cobrar. Onde atender. Tempo pra família sem pedir permissão. Não é luxo. É o mínimo pra quem estudou o que você estudou.
+- Não precisa de operação grande. Precisa de negócio seu.
+- É nisso que acreditamos.
+
+**Nota de copy:** Crítica a "vender tempo por dinheiro" deve ser sutil. Foco em falta de teto e dependência, não vilificar consultas. Negócio amplo: consultório, curso, mentoria, infoproduto.
+
+## Transformation (Nosso Diferencial)
+
+- Só plantão. Sem teto. (Sua consulta é seu maior ticket — mas só fatura quando está bem e presente.) → Renda que escala. Seu conhecimento vira produto e trabalha por você.
+- Conhecimento preso. Uma hora, um paciente. → Conhecimento empacotado. Um produto, muitos clientes.
 
 ## Pilares (Landing)
 

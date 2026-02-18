@@ -19,8 +19,8 @@ export const SEO = {
   siteName: "Kura",
   defaultTitle: "Kura | Negócios para médicos",
   defaultDescription:
-    "Educação em negócios para médicos que querem viver nos próprios termos. O caminho pra liberdade e autonomia.",
-  ogDescription: "Educação em negócios para médicos que querem viver nos próprios termos. O caminho pra liberdade e autonomia.",
+    "Educação em negócios pra médicos. Consultório, curso, mentoria. O caminho pra liberdade e autonomia.",
+  ogDescription: "Educação em negócios pra médicos. Consultório, curso, mentoria. O caminho pra liberdade e autonomia.",
 } as const;
 
 // Nav links (section ids)
@@ -41,13 +41,14 @@ export const MANIFESTO_VIDEO_ID: string | null = null;
 export const hero = {
   headline: "Doc, você não precisa de mais um plantão.",
   sub: "Está na hora de ser dono do seu negócio.",
-  detail: "Conquiste o controle da sua vida, pratique medicina nos seus próprios termos e tenha um negócio lucrativo.",
+  detail: "Praticar medicina nos seus termos. Ganhar com o que você sabe. Consultório, curso, mentoria. A Kura mostra o caminho.",
   cta: "Começar a jornada",
 };
 
 // ─── Problem (Despertar de consciência) — BP v1 rascunho v2 ───
 export const problem = [
   "Você se dedicou. Abriu mão de fim de semana, feriado, noite. Sacrificou tempo com a família. Fez tudo certo. E hoje? Vive de plantão em plantão. Sem CLT, sem previsibilidade, sem saber quanto entra mês que vem. A conta aperta e a saída é sempre a mesma: pegar mais um serviço.",
+  "Cada dia que passa convênios pagam menos. Plantão paga menos. Se você depender de quem te paga, a conta não fecha. Não é problema que a gente inventa. É a realidade.",
   "A faculdade te ensinou a ser médico. Não te ensinou a ser dono do seu negócio. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. Muito tempo cuidando de gente. Zero minutos cuidando do próprio negócio.",
   "E o mercado não espera. Centenas de médicos fazendo a mesma coisa, na mesma cidade, disputando o mesmo paciente. Sem saber como se diferenciar. Sem saber nem por onde começar.",
   "E quando você tenta sair desse ciclo? Abre uma clínica: sociedade, precificação, ponto. A agenda continua não sendo sua. O tempo some no trânsito e em reuniões que não levam a nada.",
@@ -55,7 +56,7 @@ export const problem = [
   "Aí você abre o Instagram e vê aquele colega. Você sabe qual. Formou junto, ou até depois de você. Você pegou mão em vários serviços, estudou, atendeu. Mas ele tá lá: agenda cheia, consultando de casa, produzindo conteúdo, paciente vindo de tudo quanto é lugar.",
   "Você olha aquele vídeo e pensa: eu faria isso. E faria. Só que ele aprendeu uma coisa que ninguém te ensinou: como transformar competência em negócio. A diferença? Ele entendeu o jogo antes de você.",
   "E quando você procura ajuda pra sair dessa, só encontra coach genérico que nunca pisou num consultório e não entende suas dores. Ou ofertas que prometem tudo e não mostram o caminho. Nenhum dos dois tem o que você quer aprender. Ninguém te mostra o caminho de verdade.",
-  "Não precisa ser assim. O caminho existe. Só faltava quem te mostrasse. A ideia é uma: o médico pode, e deve, ser dono do próprio negócio. É isso que muda tudo. É isso que liberta. A Kura te mostra como.",
+  "Não precisa ser assim. O caminho existe. O médico pode, e deve, ser dono do próprio negócio. Consultório, curso, mentoria, infoproduto. O formato é seu. A Kura te mostra como.",
 ];
 
 // ─── Manifesto ──────────────────────────────────────────────
@@ -64,7 +65,7 @@ export const problem = [
 export const manifesto = {
   label: "O Manifesto",
   opening: "Você merece mais.",
-  openingBody: "Mais do que plantão. Mais do que depender de escolhas que não são suas. Você escolheu medicina pra ter autonomia. Essa vida existe. Ela vem de construir seu negócio.",
+  openingBody: "Mais do que plantão. Mais do que depender de escolhas que não são suas. Você quer ser médico. Ganhar com o que sabe. Essa vida existe. Ela vem de construir seu negócio.",
   emailLabel: "Faça parte",
   emailCta: "Quero fazer parte",
   emailCtaLoading: "Entrando...",
@@ -155,7 +156,7 @@ export const transformation = {
 export const about = {
   label: "A Kura",
   title: "Por que isso existe.",
-  body: "Médicos brilhantes presos em plantão. Fazendo medicina nos termos de outro. A Kura existe porque ninguém te ensinou a se posicionar, construir seu negócio online, transformar conhecimento em produto. Medicina nos seus próprios termos.",
+  body: "O médico que quer ser médico. Ganhar com o que sabe. Consultório, curso, mentoria. Sem depender de plantão. A Kura existe porque ninguém te ensinou a se posicionar, construir seu negócio, transformar conhecimento em produto. Medicina nos seus próprios termos.",
   tagline: "O conhecimento que muda vidas não deveria ter preço de entrada.",
 };
 
@@ -185,7 +186,7 @@ export const faq = [
   {
     question: "Preciso de produto digital pra começar?",
     answer:
-      "Não. Você começa se posicionando e construindo presença. Consultório, clínica, teleconsulta ou produto digital. O formato depende de você. O método mostra o caminho.",
+      "Não. Você começa se posicionando e construindo presença. Consultório, clínica, teleconsulta, curso, mentoria. O formato depende de você. O método mostra o caminho.",
   },
   {
     question: "Não tenho tempo pra mais uma coisa.",
@@ -195,12 +196,12 @@ export const faq = [
   {
     question: "A faculdade não me ensinou isso.",
     answer:
-      "Exatamente. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. A Kura ensina o que faltou. O que você precisa pra construir seu negócio.",
+      "Exatamente. Gestão, finanças, marketing, precificação. Nada disso entrou na grade. O básico pra você não ser passado pra trás. A Kura ensina o que faltou.",
   },
   {
     question: "O que é a Kura?",
     answer:
-      "Educação em negócios feita exclusivamente para médicos. Acreditamos que criar o próprio negócio é a solução pra quem quer mais liberdade, tempo e autonomia. A Kura mostra o caminho: posicionamento, presença digital, produtos e gestão — o que a faculdade não ensinou. O conteúdo entrega.",
+      "Educação em negócios feita pra médicos. O médico que quer ser médico, ganhar com o que sabe. Consultório, curso, mentoria. A Kura mostra o caminho: posicionamento, presença digital, produtos e gestão. O que a faculdade não ensinou.",
   },
 ];
 
